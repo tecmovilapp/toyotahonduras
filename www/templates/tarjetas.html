@@ -1,0 +1,43 @@
+<ion-view view-title="TARJETA BAC - CF" hide-nav-bar="true">
+<div class="bar bar-header bar-stable">
+  <div class="buttons">
+    <a class="button button-icon icon ion-arrow-left-c" href="#/app/main"></a>
+  </div>
+  <h1 class="title">TARJETAS BAC - CF</h1>
+  <div class="buttons">
+  </div>
+</div>
+	<ion-content class="has-header has-footer">
+		<div class="row" ng-if="!error">
+			<div class="col centered">
+				<img src="img/tarjetas_top.png" style="width:100%; max-width:700px; margin:auto;">
+			</div>
+		</div>
+
+		<div class="row" style="padding-left:25px;padding-right:25px;" ng-if="!error">
+			<div class="col" style="line-height:25px; text-align:left">DESCRIPCI&Oacute;N</div>
+			<div class="col">
+				<button class="button button-small button-assertive-custom" style="width:100%" ng-click="openPDF()">DESCARGAR PDF</button>
+			</div>
+		</div>
+
+		<div class="row" style="padding-left:25px;padding-right:25px;" ng-if="!error">
+			<div class="col" style="text-align:justify;" ng-bind-html="bac.descripcion"></div>
+		</div>
+
+		<div class="list" ng-if="error">
+		  <div class="item item-button-right" style="white-space:inherit;">
+		    Ocurrio un error en la red, ¿Quiere intentar de nuevo?
+		    <button class="button button-assertive-custom" ng-click="getTarjetaBacCF()">
+		      Si
+		    </button>
+		  </div>
+		</div>
+    	
+	</ion-content>
+
+	<div class="bar bar-footer bar-assertive" style="padding:0px;" ng-if="!error">
+	    <button class="button button-block button-assertive-custom" style="margin:0px;" ng-click="openSendCardRequest()">¡SOLICÍTALA YA!</button>
+	</div>
+
+</ion-view>

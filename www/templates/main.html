@@ -1,0 +1,75 @@
+<ion-view view-title="Inicio" hide-nav-bar="true" >
+  <ion-content class="bgtoyota" has-bouncing="false" >
+    <div>
+    <div class="row" >
+        <div class="col col-50 logo1 centered">
+            <img src="img/toyota-logo-white.png" ng-click="openWeb()"/>
+        </div>
+        <!--
+        <div class="col col-50" >
+            <a href="#/app/main/config" class="col right">
+                <img src="img/botones/configuracion.png"  height="50" width="50"/><br>
+            </a>
+        </div>
+        !-->
+    </div>   
+
+    
+    <ion-list style="position: relative; bottom: 0; margin-bottom:15%;">
+        <div style="margin-top:40%;">
+        <div style="margin-left: 5%; margin-right: 5%;">
+            <div class="row" style="">
+                <a href="#/app/main/vehiculos" class="col centered" style="border-bottom:1pt solid white; border-right:1pt solid white;">
+                    <img src="img/botones/carros.png" class="icono"/><br>
+                    Autos
+                </a>
+                <a href="#/app/main/vehiculos/productos_automotrices" class="col centered" style="border-bottom:1pt solid white; ">
+                    <img src="img/botones/productos.png" class="icono"/><br>
+                    Productos Automotrices  
+                </a>
+                <a href="#/app/main/vehiculos/talleres"  class="col centered" style="border-bottom:1pt solid white; border-left:1pt solid white;">
+                    <img src="img/botones/citas.png" class="icono"/><br>
+                    Taller
+                </a>
+            </div>
+            <div class="row"  >
+                <a href="#/app/main/chat" class="col centered" style="border-right:1pt solid white;">                    
+                    <img src="img/botones/chat.png" class="icono"/><br>
+                    Chat
+                </a>
+                <a href="" ng-click="openModalToyota()" class="col centered">
+                    <img src="img/botones/grupo-flores.png" style="width: 90%;" />
+                </a>
+                <a href="#/app/main/config" class="col centered" style="border-left:1pt solid white;">                    
+                    <img src="img/botones/toyota.png" class="icono"/><br>
+                    Mi Toyota     
+                </a>
+            </div>
+            <div class="row"  >
+                <a href="#/app/main/news" class="col centered" style="border-top:1pt solid white; border-right:1pt solid white;">
+                     
+                    <img src="img/botones/news.png" class="icono"/><br>
+                    Toyota News 
+                </a>
+                <a href="#/app/main/locations" class="col centered" style="border-top:1pt solid white;">
+                    <img src="img/botones/contacto.png" class="icono"/><br>
+                    Contáctenos   
+                </a>
+                <a href="#/app/main/promo" class="col centered" style="border-top:1pt solid white; border-left:1pt solid white;">
+                    <img src="img/botones/promociones.png" class="icono"/><br>
+                    Promociones    
+                </a>
+            </div>
+        </div>
+        </div>
+
+        </ion-list>
+    </div>
+  </ion-content>
+    <!--
+    <div class="bar bar-footer bar-assertive custom-footer bgtoyota">
+        <div class="adsSmall" style="background-image:url({{ads.imagenSmall}})" ng-click="openAds()"></div>
+        <div class="adsLarge" style="background-image:url({{ads.imagenLarge}})" ng-click="openAds()"></div>
+    </div>
+    -->
+</ion-view>

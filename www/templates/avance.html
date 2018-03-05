@@ -1,0 +1,78 @@
+<ion-view view-title="AVANCE" hide-nav-bar="true">
+<div class="bar bar-header bar-stable">
+  <div class="buttons">
+    <a class="button button-icon icon ion-arrow-left-c" href="#/app/main"></a>
+  </div>
+  <h1 class="title">Avance Plus</h1>
+  <div class="buttons">
+  	<div class="button button-icon icon ion-android-share-alt" ng-click="shareAvance()"></div>
+  </div>
+</div>
+	<ion-content class="has-header has-footer">
+		<div class="row" ng-if="!error">
+			<div class="col centered">
+				<img src="img/avance_logo.png" style="width:60%; max-width:700px; margin:auto;">
+			</div>
+		</div>
+
+		<div class="row" style="padding-left:25px;padding-right:25px;" ng-if="!error">
+			<div class="col">
+				<p style="text-align:justify;" ng-bind-html="avancedata.descripcion">
+					Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+				</p>
+			</div>
+		</div>
+
+		<div class="row" style="padding-left:25px;padding-right:25px;" ng-if="!error">
+			<div class="col col-67" style="line-height:25px; text-align:left;">
+				<button class="button button-small button-assertive-custom" style="width:100%;border-radius:5px;" ng-click="openPDF()">MÁS INFORMACIÓN EN PDF</button>
+			</div>
+			<div class="col col-33">
+				<button class="button button-small button-assertive-custom" style="width:100%;border-radius:5px;" ng-click="openVideo()">VIDEO</button>
+			</div>
+		</div>
+
+		<div class="row" style="padding-left:25px;padding-right:25px;margin-top:20px;" ng-if="!error">
+	    	<div class="col col-33 right vmiddle">Nombre</div>
+	    	<div class="col col-67 left item-input-inset">
+	    		<label class="item-input-wrapper maxwidth">
+			      <input type="text" ng-model="avance.nombre" placeholder="Nombre">
+			    </label>
+	    	</div>
+	    </div>
+
+	    <div class="row" style="padding-left:25px;padding-right:25px;" ng-if="!error">
+	    	<div class="col col-33 right vmiddle">Teléfono</div>
+	    	<div class="col col-67 left item-input-inset">
+	    		<label class="item-input-wrapper maxwidth">
+	    		   +504
+			      <input type="text" ng-model="avance.phone" placeholder="98989898" style="width:80%;">
+			    </label>
+	    	</div>
+	    </div>
+
+	    <div class="row" style="padding-left:25px;padding-right:25px;" ng-if="!error">
+	    	<div class="col col-33 right vmiddle">Email</div>
+	    	<div class="col col-67 left item-input-inset">
+	    		<label class="item-input-wrapper maxwidth">
+			      <input type="text" ng-model="avance.email" placeholder="nombre@empresa.com">
+			    </label>
+	    	</div>
+	    </div>
+
+	    <div class="list" ng-if="error">
+		  <div class="item item-button-right" style="white-space:inherit;">
+		    Ocurrio un error en la red, ¿Quiere intentar de nuevo?
+		    <button class="button button-assertive-custom" ng-click="getAvancePlus()">
+		      Si
+		    </button>
+		  </div>
+		</div>
+
+	</ion-content>
+
+	<div class="bar bar-footer bar-assertive" style="padding:0px;" ng-if="!error">
+	    <button class="button button-block button-assertive-custom" style="margin:0px;" ng-click="sendAvanceRequest()">Solicitar información</button>
+	</div>
+
+</ion-view>

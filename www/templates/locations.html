@@ -1,0 +1,70 @@
+<ion-view view-title="" hide-nav-bar="true">
+		<div class="bar bar-header bar-assertive">
+				<div class="buttons">
+					<a class="button button-icon icon ion-arrow-left-c" href="#/app/main"></a>
+					
+				</div>
+<!-- lo saque de ese puto boton -->
+				<h1 class="title">Productos Automotrices</h1>
+				
+				<div class="buttons">
+				</div>
+			</div>
+<div class="bar bar-header bar-assertive ">
+  <div class="buttons">
+    <a class="button button-icon icon ion-arrow-left-c" href="#/app/main"></a>
+  </div>
+  <h1 class="title" ng-hide="search">Ubicaciónes</h1>
+
+  <label class="item-input-wrapper" ng-if="search">
+    <i class="icon git-network placeholder-icon"></i>
+    <input type="search" placeholder="Buscar" ng-model="datos.search" ng-change="searchLocations()">
+  </label>
+
+  <div class="buttons" ng-if="!search">
+  	<button class="button button-icon icon ion-social-buffer" ng-click="openRedesSociales()"></button>
+  </div>
+
+  <div class="buttons" ng-if="search">
+  	<button class="button button-icon icon ion-close-circled" ng-click="hideSearch()"></button>
+  </div>
+
+</div>
+	<ion-content class="has-header">
+			<div class="list card" ng-repeat="location in locFilter">
+					
+					<div class="item item-thumbnail-left item-text-wrap ">
+							<img src="img/logo-150-150.png">
+							<h2 class="item-text-center" style="font-size: large;"><b>{{location.nombre}}</b></h2	>
+						</div>
+					
+						<div class="item item-body">
+							<img class="full-image" src="{{location.img}}">
+							<h4>{{location.direccion}}</h4>
+						</div>
+						<div class="button-bar" >
+								<button class="button icon-left ion-ios-location button-assertive-custom" ng-click="openSingleLocation(location.nombre, location.lat, location.lng)">Ubicación</button>
+								<button class="button icon-left ion-ios-telephone button-balanced"  ng-click="CallTel(location.telefono)">Llamar</button>
+							</div>
+					
+					</div>
+		
+	
+
+
+		
+
+		<div class="item" style="text-align:center" ng-if="numLocations==0">No hay datos.</div>
+
+		<div class="list" ng-show="error">
+		  <div class="item item-button-right" style="white-space:inherit;">
+		    Ocurrio un error en la red, ¿Quiere intentar de nuevo?
+		    <button class="button button-assertive-custom" ng-click="getLocations()">
+		      Si
+		    </button>
+		  </div>
+		</div>
+
+	</ion-content>
+
+</ion-view>

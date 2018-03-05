@@ -1,0 +1,275 @@
+<ion-view view-title="VEHÍCULOS" hide-nav-bar="true">
+<div class="bar bar-header bar-assertive">
+  <div class="buttons">
+		<a class="button button-icon icon ion-arrow-left-c" ng-if="idCategoria == 0 || idCategoria == 1" href="#/app/main/vehiculos/productos_automotrices_marcas/{{idCategoria}}"></a>
+		<a class="button button-icon icon ion-arrow-left-c" ng-if="idCategoria == 2 || idCategoria == 3 || idCategoria == 4" href="#/app/main/vehiculos/productos_automotrices"></a>
+		<h1 class="title">{{categorias[idCategoria]}}</h1>
+
+		<div class="buttons button-right">
+				<button class="button button-icon ion-android-calendar" ng-click="openQuoteProductos()">
+				</button>
+			  </div>
+  </div>
+  
+  <div class="buttons">
+  </div>
+</div>
+	<ion-content class="has-header">
+
+			<div class="list card" ng-if="idCategoria == 0 && idMarca == 0">
+						
+
+						<div class="item item-thumbnail-left item-text-wrap">
+								<img src="img/iconos-productos/marcas/quakerstate.png">
+							<h2 class="item-text-center" style="font-size: large;"><b>Quaker State</b></h2>
+						</div>
+					
+						<div class="item item-body">
+
+								
+								<div class="wpb_wrapper">
+										<img class="full-image" src="http://toyota.negociosonline.net/wp-content/uploads/2017/07/Quaker-Web-300x173.png">
+							<h4></h4>
+							<h3><strong>Lubricantes Superiores</strong></h3>
+							<p>Las condiciones reales de operación de su motor son severas pero afortunadamente existe Quaker State, brindándole dos veces más protección que otras marcas. En Quaker State nuestro objetivo es optimizar al máximo el rendimiento de su motor. Quaker State le ofrece una gama de productos diseñados para asegurar la máxima protección contra el desgaste, oxidación y acumulación de depósitos de sedimentos y barnices, posibilitando que su vehículo alcance el mejor desempeño siempre. Quaker State resguarda como ninguno los componentes internos de su motor, tales como: transmisión, diferencial, dirección asistida y frenos.</p>
+							<p>Los productos Quaker State son utilizados por el equipo que más campeonatos ha ganado en Nascar en los últimos cinco años: One Sprint Cup y el Team Hendrick Motorsport.</p>
+							<p>&nbsp;</p>
+							
+							
+									</div>
+						</div>
+					</div>
+		<div class="list card" ng-if="idCategoria == 0 && idMarca == 1">
+				
+			
+				<div class="item item-body">
+
+					<div class="item  item-text-wrap">
+							<img class="full-image" src="http://toyota.negociosonline.net/wp-content/uploads/2017/07/Motorcraft-logo-300x94.png">
+					</div>
+
+						<div >
+					<img class="full-image" src="http://toyota.negociosonline.net/wp-content/uploads/2017/07/Todos-Lubrincates-Motorcraft-1-300x179.png"></h4>
+					<p>&nbsp;</p>
+					<h3><strong>Aceites Motorcraft se crearon para el rendimiento y estos:</strong></h3>
+					<p>Ayudan a mejorar el ahorro de combustible.<br>
+					Ayudan a disminuir los depósitos y residuos que comprometen el rendimiento.<br>
+					Ayudan a proteger las partes cruciales del desgaste.</p>
+					<h3><strong>Aceite Premium para motor de Motorcraft</strong></h3>
+					<p>Completamente formulado con aditivos y aceites con base hidrocraqueados para ayudar a proteger contra los depósitos y desgaste.<br>
+					Ayuda a proteger contra la oxidación por altas temperaturas, gelificación a bajas temperaturas, óxido y corrosión y espuma.<br>
+					Formulado para un fácil arranque en clima frío a temperaturas por debajo de -25°C (-13°F).<br>
+					Grados disponibles: SAE 10W-40.</p>
+					<h3><strong>Aceite Premium con mezcla sintética de Motorcraft</strong></h3>
+					<p>Fabricado con la más alta calidad, aceites con base hidro procesada/sintética y aditivos especialmente formulados para disminuir el desgaste y sedimento del motor.<br>
+					Cumple con la categoría de servicio de conservación de energía/ API SM.<br>
+					Los aceites de mezcla sintética Motorcraft han sido probados detenidamente y se ha encontrado que su desempeño es excelente y protegen los aceites de motor con solventes refinados normales.<br>
+					Disponible en cantidades a granel, el uso de aceites a granel ayuda al medio ambiente.<br>
+					Grados disponibles: SAE 5W-20, 5W-30 Y 10W-30.</p>
+					<h3><strong>Aceite completamente sintético de Motorcraft</strong></h3>
+					<p>Completamente formulado para ayudar a proteger los motores.<br>
+					Recomendado para uso en aplicaciones de motores de gasolina en temperaturas extremas incluyendo motores supercargados, turbo cargados o normalmente aspirados de alto rendimiento.<br>
+					Los aditivos que disminuyen la fricción del aceite sintético 5W-20 de Motorcraft da como resultado una disminución cuantificable del consumo de combustible cuando se compara con el aceite SAE 10W-30.<br>
+					Formulado para proporcionar arranques fáciles a temperaturas de hasta -30°C (-22°F)<br>
+					Grados disponibles: SAE 5W-20, 5W-30 y 5W-50.</p>
+					<h3><strong>Aceites Motorcraft para motores diesel</strong></h3>
+					<p>Fabricados con aceite con base hidro procesada de alta calidad con aditivos diseñados para minimizar el carbón y desgaste y ayuda a proteger los sistemas de tratamiento posterior del escape, como los filtros de particulares.<br>
+					Diseñado específicamente para los motores Power Stroke Diesel.<br>
+					Cumple con la nueva categoría CJ-4 de servicio API.<br>
+					Grados disponibles: SAE 15W-30 y 15W-40</p>
+					
+					
+							</div>
+				</div>
+			</div>
+
+		<div class="list card" ng-if="idCategoria == 0 && idMarca == 2">
+				
+				<div class="item  item-text-wrap">
+						<img class="full-image" src="http://toyotahonduras.com/wp-content/uploads/2017/07/EST-logo.png">
+				</div>
+			
+				<div class="item item-body">
+
+						
+					<div class="wpb_wrapper">
+						<img class="full-image" src="http://toyotahonduras.com/wp-content/uploads/2017/07/Post-EST.png">
+					
+						<h3><strong>Aditivos Especializados en la limpieza interna de tu motor.</strong></h3>
+					<p>Diseñado con Tecnología Sintética.<br>
+					Incorporan los últimos avances de la química molecular al producir aditivos de la más alta calidad bajo componentes sintéticos.<br>
+					Aditivo Oficial Grupo Flores en sus talleres de Servicio y Agencias de Repuestos.<b>&nbsp;</b></p>
+					
+							</div>
+				</div>
+			</div>
+
+		
+			<div class="list card" ng-if="idCategoria == 1 && idMarca == 0">
+					
+						<div class="item  item-text-wrap">
+								<img class="full-image" src="http://toyotahonduras.com/wp-content/uploads/2017/09/Logo-Panasonic.png">
+						</div>
+					
+						<div class="item item-body">
+								<div class="wpb_text_column wpb_content_element ">
+										<div class="wpb_wrapper">
+												<img class="full-image" src="http://toyota.negociosonline.net/wp-content/uploads/2017/09/standard-2-300x180.png">
+											
+								<ul style="text-align: justify;"><li><span>Matsushita sigue innovando, ya que sus baterías para carro Panasonic brindan un rendimiento 20% superior a las tradicionales. Los avances en las investigaciones de Matsushita les permiten a las baterías para carro Panasonic desarrollar:</span></li></ul>
+								<ul style="text-align: justify;"><li><span>Alto rendimiento: Mantienen un rendimiento constante que da la confianza y que facilita el arranque.</span></li>
+								<li><span>Gran capacidad: Con el mismo tamaño, producen más poder eléctrico.</span></li>
+								<li><span>A prueba de calor: Son residentes a las altas temperaturas, por lo que no se deforman ni se ven afectadas en su desempeño.</span></li>
+								<li><span>Larga vida: Gracias a los avances que se integran como un todo, las baterías para carro Panasonic gozan de una excepcional durabilidad.</span></li>
+								<h3><strong>¿Qué hace diferente a Panasonic?</strong></h3>
+								<p>La mezcla de las técnicas desarrolladas por Matsushiba Battery CO. Ltda, hace que las baterías para carro Panasonic (Ca Expandido) tengan un excelente desempeño y alta capacidad.</p>
+								<ul><li style="text-align: justify;"><span>Alta capacidad de arranque: La combinación de técnicas especiales de fabricación les dan, a las baterías para carro libre de mantenimiento de Panasonic, una capacidad de reproducción de energía que optimiza la capacidad de arranque de su vehículo.</span></li>
+								<li style="text-align: justify;"><span>Diseño en función de larga vida: La batería mantienen su alto desempeño aun en condiciones extremas y por mucho tiempo, de forma que en condiciones normales su vida útil es excepcionalmente larga.</span></li>
+								<li style="text-align: justify;"><span>Características optimas de auto-descarga y consumo de electrolito: De esta forma el alto desempeño de la batería se mantiene, sin necesidad de añadir agua, durante todo el periodo de expectativa de vida.</span></li>
+								<li style="text-align: justify;"><span>La batería informa su estado: El diseño de la batería incluye un indicador que señala las condiciones y necesidades de la batería.</span></li>
+								<li style="text-align: justify;"><span>Seguridad: Las baterías Panasonic están equipadas con filtros que evitan la combustión y mejoran el continuo desempeño de la batería.</span></li>
+								</ul>
+								
+								
+								<hr></div>
+									</div>
+						</div>
+					
+					</div>
+
+			<div class="list card" ng-if="idCategoria == 1 && idMarca == 1">
+					
+					<div class="item  item-text-wrap">
+						<img class="full-image" src="http://toyota.negociosonline.net/wp-content/uploads/2017/07/Motorcraft-logo-300x94.png">
+					</div>
+					
+						<div class="item item-body">
+								<div class="wpb_wrapper">
+										<div class="wpb_text_column wpb_content_element ">
+											<div class="wpb_wrapper">
+													
+									<img class="full-image" src="http://toyota.negociosonline.net/wp-content/uploads/2017/09/Imagen-Familia-Motorcraft-300x172.png">			
+									<h3><strong>Baterías Motorcraft MAX</strong></h3>
+									<ul><li>Excelente cobertura de garantía Limitada: 100 Meses (hasta 8 años) millaje ilimitado.</li>
+									<li>Periodo de reemplazo Gratuito de 36 meses ( 3 años)</li>
+									<li>Las aleaciones de vida útil larga y el diseño de red optimizado brindan un rendimiento excelente sobre diseños convencionales en condiciones de alta temperatura.</li>
+									<li>La construcción resistente al calor ayuda a reducir la corrosión, aumentar la vida útil de la batería y proporcionar un ciclo de vida más largo.</li>
+									<h3><strong>Baterías Motorcraft PLUS</strong></h3>
+									<ul><li>Excelente cobertura de garantía limitada: 84 meses (7 años) millaje ilimitado.</li>
+									<li>Periodo de reemplazo Gratuito de 18 meses.</li>
+									<li>La construcción resistente al calor ayuda a reducir la corrosión, aumentar la vida útil de la batería y proporcionar un ciclo de vida más largo.</li>
+									</ul>
+
+									
+											</div>
+										</div>
+									</div>
+						</div>
+					
+					</div>
+
+					<div class="list card" ng-if="idCategoria == 2">
+							
+							<div class="item  item-text-wrap">
+								<img class="full-image" src="http://toyotahonduras.com/wp-content/uploads/2017/07/Yokohama-Logo.png">
+							</div>
+							
+								<div class="item item-body">
+										<div id="primary" class="content-area">
+												<main id="main" class="site-main" role="main">
+						
+													
+						<article id="post-573" class="post-573 page type-page status-publish has-post-thumbnail hentry">
+						
+							<div class="entry-content">
+						<img class="full-image" src="http://www.japaneseautocenter.net/wp-content/uploads/2016/01/YOKOHAMA-several-tires.jpg">		
+						<p style="text-align: justify;">Amplia variedad de Llantas de alto rendimiento para automóviles</p>
+						<p style="text-align: justify;">Tecnología 100% Japonesa<br>
+						<span>Fue fundada en 1917.<br>
+						</span><span>Top 10 de los mejores fabricantes de llantas a nivel mundial.<br>
+						</span><span>Empresa Global con más de 20% del mercado Japonés.<br>
+						</span><span>EN Honduras las llantas Yokohama son distribuidoras por Toyopartes agencias de repuestos, desde el 2005.</span></p>
+						<b style="text-align: justify;">¿Porque Yokohama marca la diferencia?</b>
+						<p><span>– Tiene una línea de neumáticos para todas las necesidades en todos los segmentos.<br>
+						</span><span>– Introduce diseños de neumáticos agresivos, innovadores y progresistas al mercado que ayudan a mejorar la estética de su vehículo.<br>
+						</span><span>– Llantas Yokohama rinden tanto en terrenos húmedos como secos.<br>
+						</span><span>– Llantas diseñadas para altos índices de velocidad.</span><span><br>
+						– Yokohama produce llantas para muchas de las marcas más prestigiosas de vehículos a nivel mundial.</span></p>
+						<p style="text-align: justify;">Contamos con gran stock de llantas y rines 12, 14, 15, 16, 17 y 18</p>
+						<p style="text-align: justify;">Por la compra de sus llantas le ofrecemos armado, balanceo y válvula GRATIS</p>
+						<b>Diseños</b>
+						<p><span>– Geolandar A/T-S: Buena conducta en ruta. Actitud todo terreno.<br>
+						</span><span>– Geolandar H/T-S: Desde el manejo diario hasta las incursiones ocasionales en todo terreno, proporciona las estaciones.<br>
+						</span><span>– Geolandar M/T: Proporciona calidad superior en durabilidad y tracción sobre todas las superficies y condiciones climáticas.<br>
+						</span><span>– AVID Tourning – S: Llantas para turismo que cautiva con su grata combinación de confort capacidad y valor.<br>
+						</span><span>– AVID TRZ – S: Llanta para turismo que cautiva con su grata combinación de confort, capacidad y valor.<br>
+						</span><span>– AVID – TRZ: La llanta asimétrica para toda estación, proporciona confianza en condiciones de terreno seco o mojado.<br>
+						</span><span>– AVID ENVIGOR: Ninguna otra llanta ofrece un rendimiento tan completo.</span></p>
+						<h3><strong>Garantía de fábrica:</strong></h3>
+						</span><span>Llantas diseñadas para un rendimiento mínimo de 45,000 a 50,000 Kms.<br>
+						</span><span>*Garantía no incluye daños ocasionados por uso indebido o mal manejo.</span></p>
+							</div><!-- .entry-content -->
+						
+							</article><!-- #post-## -->
+						
+												</main><!-- #main -->
+											</div>
+								</div>
+							
+							</div>
+
+					<div class="list card" ng-if="idCategoria == 3">
+							
+							<div class="item  item-text-wrap">
+								<img class="full-image" src="http://toyotahonduras.com/wp-content/uploads/2017/07/Logos-Car-Depot.png">
+							</div>
+							
+								<div class="item item-body">
+										<div id="primary" class="content-area">			
+						
+													
+													<div class="wpb_wrapper">
+															<img class="full-image" src="http://toyota.negociosonline.net/wp-content/uploads/2017/09/Imagen-Familia-Motorcraft-300x172.png">			
+												<p style="text-align: justify;">Sólo los Repuestos Legítimos están diseñados y fabricados especialmente para su vehículo.
+														
+														Para conducir sin problemas y mantener un mejor valor de reventa, pida siempre Repuestos Legítimos  de las marcas Toyota, Lexus y Daihatsu.
+														
+														Un auto de verdad…merece piezas de verdad.</p>
+												
+														</div>
+											</div>
+								</div>
+							
+							</div>
+
+					<div class="list card" ng-if="idCategoria == 4">
+							
+							<div class="item  item-text-wrap">
+								<img class="full-image" src="http://toyotahonduras.com/wp-content/uploads/2017/07/Logo-Repuestos-Legitimos.jpg">
+							</div>
+							
+								<div class="item item-body">
+										<div id="primary" class="content-area">
+												<main id="main" class="site-main" role="main">
+						
+													
+														<div class="wpb_wrapper">
+																<img class="full-image" src="http://toyotahonduras.com/wp-content/uploads/2017/07/combo.png">			
+													<p style="text-align: justify;">Le ofrecemos variedad de accesorios para equipar su vehículo según sus gustos y preferencias; contamos además con mano de obra especializada en el&nbsp;ramo y nuestro local se encuentra ubicado en un lugar accesible.</p>
+													
+													
+															</div>
+											</div>
+								</div>
+							
+							</div>
+		
+	</ion-content>
+
+	<ion-footer-bar align-title="left" class="bar-assertive">			
+				<div class="bar bar-footer bar-assertive" style="padding:0px;">
+						<button class="button button-block button-assertive-custom" style="margin:0px;" ng-click="CallTel('2216-4000')" >Llamar</button>
+					</div>
+		</ion-footer-bar>
+
+</ion-view>

@@ -1,0 +1,46 @@
+<ion-modal-view class="custom-modal">
+  <ion-content>
+  <button class="button button-icon icon assertive ion-camera" ng-click="closeAddCar()" style="float:right;position:relative;z-index:2;"></button>
+  <div style="clear:both"></div>
+  <!--<img class="image-car" src="{{addcar.image}}">-->
+  <div class="btn-camera" ng-click="selectOrigin()"></div>
+  <div style="clear:both"></div>
+  <div style="text-align:center;padding:10px;">Agregar vehículo</div>
+    
+
+  <div class="list">
+      <img class="full-image" style="margin: 0 !important; padding: 0 !important;" src="img/banners/Banners Toyota-15.jpg" >	
+      <label class="item item-input">
+        <span class="input-label">Placa</span>
+        <input type="text" ng-model="addcar.placa" placeholder="Ingrese el numero de placa">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">VIN</span>
+        <input type="text" ng-model="addcar.vin" placeholder="Ingrese el VIN del vehiculo">					
+      </label>
+  </div>
+
+    <label class="item item-input item-select custom-select">
+      <div class="input-label">
+        Modelo
+      </div>
+      <select ng-model="addcar.model">
+        <option ng-repeat="car in carlist">{{car.model}}</option>
+      </select>
+    </label>
+
+    <label class="item item-input item-select custom-select">
+      <div class="input-label">
+        A&ntilde;o
+      </div>
+      <select ng-model="addcar.year">
+        <option ng-repeat="(key, value) in carYears">{{value}}</option>
+      </select>
+    </label>
+
+    <label class="item" style="border:0px;">
+      <button class="button button-block button-assertive-custom" ng-click="guardarVehiculo()">Guardar veh&iacute;culo</button>
+    </label>
+
+  </ion-content>
+</ion-modal-view>

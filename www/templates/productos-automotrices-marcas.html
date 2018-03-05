@@ -1,0 +1,95 @@
+<ion-view view-title="Marcas" hide-nav-bar="true">
+<div class="bar bar-header bar-assertive">
+  <div class="buttons">
+		<a class="button button-icon icon ion-arrow-left-c" href="#/app/main/vehiculos/productos_automotrices"></a>
+		
+  </div>
+
+  <!-- lo saque de ese puto boton -->
+
+  <h1 class="title">Marcas</h1>
+  
+  <div class="buttons">
+  </div>
+</div>
+	<ion-content class="has-header">
+		
+		<div ng-if="idCategoria == 0">
+			<div class="list" style="margin: 0 !important; padding: 0 !important;">
+					<img class="full-image" style="margin: 0 !important; padding: 0 !important;" src="img/banners/Banners Toyota-12.jpg" >
+						<a class="item item-thumbnail-left item-icon-right"  href="#/app/main/vehiculos/productos_automotrices_detalle/0/0">
+							<img class="full-image" src="img/iconos-productos/marcas/quakerstate.png" id="item{{car.id}}">
+							<div class="item-text-center item-text-wrap"><h2>Quaker State</h2></div>
+							<i class="icon ion-ios-arrow-right"></i>
+						</a>
+
+						<a class="item item-thumbnail-left item-icon-right"  href="#/app/main/vehiculos/productos_automotrices_detalle/0/1">
+							<img src="img/iconos-productos/marcas/motorcraft.png" id="item{{car.id}}">
+							<div class="item-text-center item-text-wrap" ><h2>Motorcraft</h2></div>
+							<i class="icon ion-ios-arrow-right"></i>
+						</a>
+
+						<a class="item item-thumbnail-left item-icon-right"  href="#/app/main/vehiculos/productos_automotrices_detalle/0/2">
+							<img src="img/iconos-productos/marcas/est.png" id="item{{car.id}}">
+							<div class="item-text-center item-text-wrap" ><h2>EST</h2></div>
+							<i class="icon ion-ios-arrow-right"></i>
+						</a>
+					
+					</div>
+				</div>
+
+			<div ng-if="idCategoria == 1">
+					<div class="list" style="margin: 0 !important; padding: 0 !important;">
+							<img class="full-image" style="margin: 0 !important; padding: 0 !important;" src="img/banners/baterias.jpg" >
+								<a class="item item-thumbnail-left item-icon-right"  href="#/app/main/vehiculos/productos_automotrices_detalle/1/0">
+									<img class="full-image" src="img/iconos-productos/marcas/panasonic.png" id="item{{car.id}}">
+									<div class="item-text-center item-text-wrap"><h2>Panasonic</h2></div>
+									<i class="icon ion-ios-arrow-right"></i>
+								</a>
+		
+								<a class="item item-thumbnail-left item-icon-right"  href="#/app/main/vehiculos/productos_automotrices_detalle/1/1">
+									<img src="img/iconos-productos/marcas/motorcraft.png" id="item{{car.id}}">
+									<div class="item-text-center item-text-wrap"><h2>Motorcraft</h2></div>
+									<i class="icon ion-ios-arrow-right"></i>
+								</a>
+							
+							</div>
+						</div>
+
+			<div ng-if="idCategoria == 2">
+					<div class="list" style="margin: 0 !important; padding: 0 !important;">
+							<img class="full-image" style="margin: 0 !important; padding: 0 !important;" src="img/banner1.jpeg" >
+								<a class="item item-thumbnail-left item-icon-right"  href="#/app/main/vehiculos/productos_automotrices_detalle/2/0">
+									<img class="full-image" src="img/iconos-productos/marcas/quakerstate.png" id="item{{car.id}}">
+									<div class="item-text-center item-text-wrap" ><h2>Yokohama</h2></div>
+									<i class="icon ion-ios-arrow-right"></i>
+								</a>
+							
+							</div>
+						</div>
+
+			<div ng-if="idCategoria == 3">
+					<div class="list" style="margin: 0 !important; padding: 0 !important;">
+							<img class="full-image" style="margin: 0 !important; padding: 0 !important;" src="img/banner1.jpeg" >
+								<a class="item item-thumbnail-left item-icon-right"  href="#/app/main/vehiculos/productos_automotrices_detalle/2/0">
+									<img class="full-image" src="img/iconos-productos/marcas/quakerstate.png" id="item{{car.id}}">
+									<div class="item-text-center item-text-wrap" ><h2>Car Depot</h2></div>
+									<i class="icon ion-ios-arrow-right"></i>
+								</a>
+							
+							</div>
+						</div>
+
+
+		<div class="list" ng-show="error">
+		  <div class="item item-button-right" style="white-space:inherit;">
+		    Ocurrio un error en la red, ¿Quiere intentar de nuevo?
+		    <button class="button button-assertive-custom" ng-click="getCategories()">
+		      Si
+		    </button>
+		  </div>
+		</div>
+		
+	</ion-content>
+
+</ion-view>

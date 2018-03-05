@@ -1,0 +1,37 @@
+COMANDO USADO PARA GENERAR EL KEYSTORE PARA EL APP DE TOYOTA HONDURAS
+keytool -genkey -v -keystore toyotahonduras.keystore -alias toyotahonduras  -keyalg RSA -keysize 2048 -validity 10000
+
+INFORMACION DEL KEYSTORE
+contraseña del almacen de claves: toyota2016
+Cuales son su nombre y su apellido?
+  [Unknown]:  Luis Guzman
+Cual es el nombre de su unidad de organizaci?n?
+  [Unknown]:  Appland
+Cual es el nombre de su organizaci?n?
+  [Unknown]:  Appland
+Cual es el nombre de su ciudad o localidad?
+  [Unknown]:  Tegucigalpa
+Cual es el nombre de su estado o provincia?
+  [Unknown]:  Francisco Morazan
+Cual es el c?digo de pa?s de dos letras de la unidad?
+  [Unknown]:  HN
+
+  Contraseña clave para <hct> toyota2016
+
+- - - - - - - - - - - - - - - - - - - - - - -
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore toyotahonduras.keystore toyotahonduras-u.apk toyotahonduras
+
+- - - - - - - - - - - - - - - - - -  - - - -
+
+zipalign -v 4 toyotahonduras-u.apk toyotahonduras.apk
+
+
+# # # # # # # # # # # # # # # # # # # #
+Para sacar el SHA1 usamos este comando:
+keytool -exportcert -list -v -alias hct -keystore hct.keystore
+
+## Info Laptop Mario
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore toyotahonduras.keystore android-release-unsigned.apk toyotahonduras
+C:\Development\android-sdk\build-tools\27.0.1\zipalign.exe -v 4 android-release-unsigned.apk toyotahonduras.apk
+

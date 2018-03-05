@@ -1,0 +1,21 @@
+<ion-modal-view class="custom-modal">
+	<div class="bar bar-header bar-stable">
+	  <h1 class="title">{{singleP.titulo}}</h1>
+	  <button class="button button-icon icon ion-close-round" ng-click="closeSinglePromo();"></button>
+	</div>
+  <ion-content>
+  	<div class="row">
+		<div class="col centered">
+			<img src="{{singleP.imagen}}" style="width:100%"><br>
+			<div style="margin-bottom:10px;text-align:left;">Fecha: {{singleP.fecha}}</div>
+			<p style="text-align:justify">
+				{{singleP.descripcion}}
+			</p>
+		</div>
+  	</div>
+    <label class="item" style="border:0px;">
+      <button class="button button-block button-assertive-custom button-icon icon ion-android-share-alt icon-custom-margin" ng-click="sharePromo(singleP.enlace)">Compartir</button>
+    </label>
+
+  </ion-content>
+</ion-modal-view>

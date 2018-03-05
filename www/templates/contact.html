@@ -1,0 +1,78 @@
+<ion-view view-title="CONTÁCTENOS" hide-nav-bar="true">
+<div class="bar bar-header bar-stable">
+  <div class="buttons">
+    <a class="button button-icon icon ion-arrow-left-c" href="#/app/main"></a>
+  </div>
+  <h1 class="title">CONTÁCTENOS</h1>
+  <div class="buttons">
+  </div>
+</div>
+	<ion-content class="has-header">
+	<div class="row">
+		<div class="col" style="text-align:left">
+			<p style="margin:10px;margin-bottom:0px;">Nombre</p>
+			<div class="item-input-inset">
+			<label class="item-input-wrapper">
+		      <input type="text" ng-model="contact.nombre" style="width:100%;height:40px" placeholder="Nombre">
+		    </label>
+		    </div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col" style="text-align:left">
+			<p style="margin:10px;margin-bottom:0px;margin-top:0px;">Telefono</p>
+			<div class="item-input-inset">
+			<label class="item-input-wrapper">+504
+		      <input type="text" ng-model="contact.phone" style="width:80%;height:40px" placeholder="98989898">
+		    </label>
+		    </div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col" style="text-align:left">
+			<p style="margin:10px;margin-bottom:0px;margin-top:0px;">Email</p>
+			<div class="item-input-inset">
+			<label class="item-input-wrapper">
+		      <input type="text" ng-model="contact.email" style="width:100%;height:40px" placeholder="nombre@empresa.com">
+		    </label>
+		    </div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col" style="text-align:left">
+			<div style="padding-left:10px;">Comentario:</div>
+			<div class="item-input-inset">
+				<label class="item-input-wrapper" style="padding:5px;">
+			      <textarea ng-model="contact.comentario" rows="5" placeholder="" style="background:transparent;width:100%;padding:4px;resize:none"></textarea>
+			    </label>
+		    </div>
+		</div>
+	</div>
+	
+	<ion-list>
+	  <ion-radio ng-model="contact.tipo" ng-value="'Comentario'">Comentario</ion-radio>
+	  <ion-radio ng-model="contact.tipo" ng-value="'Consulta'">Consulta</ion-radio>
+	  <ion-radio ng-model="contact.tipo" ng-value="'Queja'">Queja</ion-radio>
+	</ion-list>
+
+	<div class="row">
+		<div class="col centered">
+			<button class="button button-small button-assertive-custom" style="min-width:100px;" ng-click="openChat(contactdata.enlace)">CHAT</button>
+		</div>
+		<div class="col centered">
+			<a href="tel:{{contactdata.telefono}}"class="button button-small button-assertive-custom" style="min-width:100px;">LLAMAR</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col">
+			<button class="button button-block button-icon icon ion-arrow-right-c button-assertive-custom" style="margin:0px;" ng-click="sendContactData()"></button>
+		</div>
+	</div>
+    	
+	</ion-content>
+
+</ion-view>

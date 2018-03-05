@@ -1,0 +1,22 @@
+<ion-modal-view class="custom-modal">
+	<div class="bar bar-header bar-stable">
+	  <h1 class="title">{{singleN.titulo}}</h1>
+	  <button class="button button-icon icon ion-close-round" ng-click="closeSingleNews();"></button>
+	</div>
+  <ion-content class="has-header">
+  	<div class="row">
+		<div class="col centered">
+			<img src="{{singleN.imagen}}" style="width:100%"><br>
+			<div style="text-align:left;margin-bottom:10px;">Fecha: {{singleN.fecha}}</div>
+			<p style="text-align:justify">
+				{{singleN.descripcion}}
+			</p>
+		</div>
+  	</div>
+
+  	<label class="item" style="border:0px;">
+      <button class="button button-block button-assertive-custom button-icon icon ion-android-share-alt icon-custom-margin" ng-click="shareNewsLink(singleN.enlace)">Compartir</button>
+    </label>
+
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,49 @@
+<ion-modal-view>
+	<div class="bar bar-header bar-stable">
+	  <h1 class="title">Cotizaci&oacute;n</h1>
+	  <button class="button button-icon icon ion-close-round" ng-click="closeQuote();"></button>
+	</div>
+	<ion-content class="has-header">
+
+		
+
+		<div class="list">
+				<img class="full-image" style="margin: 0 !important; padding: 0 !important;" src="img/banners/llega.jpg" >	
+
+				<div class="row">
+						<div class="col">
+							<div class="list card" style="box-shadow:none;margin:0px !important; color:#000;">
+								<h3>{{quote.car.nombre}}</h3>
+								<p>Informaci&oacute;n de contacto</p>
+							</div>
+						</div>
+					</div>
+
+
+				<label class="item item-input">
+					<span class="input-label">Nombre</span>
+					<input type="text" ng-model="quote.nombre" placeholder="Nombre">
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Teléfono</span>
+					<input type="tel" ng-model="quote.telefono" placeholder="98989898" style="width:80%;">					
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Email</span>
+					<input type="email" ng-model="quote.email" placeholder="nombre@empresa.com">
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Ciudad</span>
+					<input type="text" ng-model="quote.ciudad" placeholder="Ingresa la ciudad">
+				</label>
+		</div>
+
+
+		<div class="row">
+			<div class="col">
+				<button class="button button-block button-assertive-custom button-full" style="margin:0px;" ng-click="sendQuote()">Enviar</button>
+			</div>
+		</div>
+
+	</ion-content>
+</ion-modal-view>

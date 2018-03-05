@@ -1,0 +1,67 @@
+<ion-view view-title="Mi configuración" hide-nav-bar="true">
+<div class="bar bar-header bar-assertive">
+		<div class="buttons">
+			<a class="button button-icon icon ion-arrow-left-c" href="#/app/main"></a>
+			<h1 class="title">Mi configuración</h1>
+		</div>
+		<div class="buttons">
+		</div>
+	</div>
+  <ion-content class="has-header has-footer">
+		<div class="list">
+				<img class="full-image" style="margin: 0 !important; padding: 0 !important;" src="img/banners/Banners Toyota-15.jpg" >	
+				<label class="item item-input">
+					<span class="input-label">Nombre</span>
+					<input type="text" ng-model="datos.nombre" placeholder="Nombre">
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Identidad</span>
+					<input type="text" ng-model="datos.identidad" placeholder="0801190010400">					
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Teléfono</span>
+					<input type="tel" ng-model="datos.telefono" placeholder="98989898" style="width:80%;">					
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Email</span>
+					<input type="email" ng-model="datos.email" placeholder="nombre@empresa.com">
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Ciudad</span>
+					<input type="text" ng-model="datos.ciudad" placeholder="Ingresa la ciudad">
+				</label>
+		</div>
+
+    <div class="row">
+    	<div class="col centered"><h4>Vehículos</h4></div>
+    </div>
+    <div class="row">
+    	<div class="col"></div>
+    	<div class="col right">
+    		<button class="button button-small button-outline button-assertive button-assertive-custom" style="margin-right:5px;padding-left:15px;padding-right:15px;border-width:2px;border-radius:10px;" ng-click="openAddCar()">+ Agregar vehículo</button>
+		</div>
+    </div>
+
+    <div class="list">
+        <div class="item item-avatar" style="border:0px;" ng-repeat="auto in mycars">
+          <img src="{{auto.image}}">
+          <button class="button button-small button-outline button-assertive" style="float:right;margin-bottom:-31px;padding-left:15px;padding-right:15px;border-width:2px;border-radius:10px;z-index:2;" ng-click="openEditCar(auto.modelo, auto.year, auto.image, auto.placa, auto.vin)">Detalle</button>
+          <div style="clear:both"></div>
+          <h2 style="position:relative;z-index:1;">{{auto.modelo}} </h2>
+          <p style="border-bottom: solid 1px #ddd;">A&ntilde;o: {{auto.year}} <br>Placa: {{auto.placa}}</p>
+
+        </div>
+		</div>
+		
+
+		
+
+		
+
+  </ion-content>
+
+  	<div class="bar bar-footer bar-assertive" style="padding:0px;">
+	    <button class="button button-block button-assertive-custom" style="margin:0px;" ng-click="saveConfig()">Guardar</button>
+	  </div>
+
+</ion-view>

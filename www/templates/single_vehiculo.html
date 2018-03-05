@@ -1,0 +1,112 @@
+<ion-view view-title="{{car.nombre}}" hide-nav-bar="true" cache-view="false">
+<div class="bar bar-header bar-assertive">
+  <div class="buttons">
+		<a class="button button-icon icon ion-arrow-left-c" style="float: right !important;" href="#/app/main/vehiculos/vehiculos_cat/{{idCat}}"></a>
+		
+		<h1 class="title">Detalle Vehículo</h1>
+		
+		<div class="buttons button-right">
+            <button class="button button-icon ion-android-calendar" ng-click="openPruebaManejo()">
+			</button>
+          </div>
+  </div>
+
+  
+  <!--
+  <div class="buttons">
+  	<button ng-click="shareCarLink()" class="button button-icon icon ion-android-share-alt"></button>
+  </div>
+	-->
+</div>
+	<ion-content class="has-header">
+		<div class="list card">
+				
+			<div class="item item-text-wrap">
+			<h1>{{car.nombre}}</h1>
+			</div>
+		
+			<div class="item item-body">
+			<img src="img/cargando.jpg" id="item-bigImage" style="width:100%;"/> 
+			<img src="{{bigImage}}" item-id="-bigImage" style="display:none" imageonload/>
+
+			<ion-scroll direction="x" style="width:100%;height:100px;" ng-show="!loading">
+				<div class="row" style="margin:0;padding:0;">
+					<div class="col" style="padding:0;min-height:90px;min-width:90px; margin:5px;" ng-repeat="(key, value) in fotos" ng-click="changeImage('{{value.url}}')" ng-hide="value.url==false">
+						<div style="background:url(img/cargando_list.jpg) center center no-repeat;background-size:cover;min-width:90px;min-height:90px;" id="item-gs{{key}}"></div>
+						<img src="{{value.url}}" item-id="-gs{{key}}" style="display:none" imageonload1/>
+					</div>
+				</div>
+			</ion-scroll>
+
+			<p>
+					{{car.descripcion}}
+			</p>
+
+			
+
+			<h1>Especificaciones Técnicas</h1>
+
+			<div class="row" >
+					<div class="col centered">							
+							<img src="img/iconos-caracteristicas/precio.png" class="customized-image">
+							<p style="font-size: x-large;">{{car.precio}}</p>
+							<h2><b>Precio Desde</b></h2>
+					</div>
+				</div>
+			</br>
+			<div class="row" >
+					<div class="col col-50 centered">
+							<img src="img/iconos-caracteristicas/traccion.png" class="customized-image">
+							<p style="font-size: x-large;">{{car.traccion}}</p>
+							<h2><b>Tracción</b></h2>
+					</div>
+					<div class="col col-50 centered" >
+							<img src="img/iconos-caracteristicas/motor.png" class="customized-image" >
+							<p style="font-size: x-large;">{{car.motor}}</p>
+							<h2><b>Motor</b></h2>
+					</div>
+				</div>
+			</br>
+			<div class="row" >
+					<div class="col col-50 centered">
+							<img src="img/iconos-caracteristicas/combustible.png" class="customized-image">
+							<p style="font-size: x-large;">{{car.combustible}}</p>
+							<h2><b>Combustible</b></h2>
+					</div>
+					<div class="col col-50 centered" >
+							<img src="img/iconos-caracteristicas/transmision.png" class="customized-image">
+							<p style="font-size: x-large;">{{car.transmision}}</p>
+							<h2><b>Transmisión</b></h2>
+					</div>
+				</div>
+			</br>
+			<div class="row" >
+					<div class="col col-50 centered">
+							<img src="img/iconos-caracteristicas/potencia.png" class="customized-image">
+							<p style="font-size: x-large;">{{car.potencia}}</p>
+							<h2><b>Potencia</b></h2>
+					</div>
+					<div class="col col-50 centered" >
+							<img src="img/iconos-caracteristicas/pasajeros.png" class="customized-image">
+							<p style="font-size: x-large;">{{car.pasajeros}}</p>
+							<h2><b>Pasajeros</b></h2>
+					</div>
+				</div>
+			</br>
+
+			
+
+			</div>
+		
+		</div>
+
+		
+
+		<div class="item assertive" style="text-align:center;white-space:normal;" ng-if="error" ng-click="getCarData()">Ocurrio un error a recurperar los datos, intenta nuevamente.</div>
+	</ion-content>
+
+	<div class="bar bar-footer bar-assertive" style="padding:0px;">
+	    <button class="button button-block button-assertive-custom" style="margin:0px;" ng-click="openQuote()">Solicitar cotizaci&oacute;n</button>
+	  </div>
+
+</ion-view>

@@ -1,0 +1,156 @@
+<ion-view view-title="Talleres" hide-nav-bar="true">
+<div class="bar bar-header bar-assertive">
+  <div class="buttons">
+		<a class="button button-icon icon ion-arrow-left-c" href="#/app/main/vehiculos/talleres"></a>
+
+		
+		<h1 class="title">Detalle</h1>
+
+		<div class="buttons button-right">
+				<button class="button button-icon ion-android-calendar" ng-click="openQuoteTaller()">
+				</button>
+			  </div>
+  </div>
+
+  
+  <div class="buttons">
+  </div>
+</div>
+	<ion-content class="has-header padding" >
+		
+			<div class="list card" ng-if="idCategoria == 0">
+					
+						<div class="item item-thumbnail-left item-text-wrap">
+								<img src="img/iconos-talleres/taller-de-mecanica.png">
+							<h2 class="item-text-center" style="font-size: large;"><b>{{categorias[idCategoria]}}</b></h2	>
+						</div>
+
+						<div class="item item-body">
+							<img class="full-image" src="img/iconos-talleres/mecanica.JPG">
+									<div class="entry-content">
+											<h3><strong>Servicios de Mecánica:</strong></h3>
+									<p>· Mantenimiento preventivo express (Revisión en 60 minutos).<br>
+									· Mantenimiento Preventivo y General.<br>
+									· Cambio de Aceite.<br>
+									· Alineamiento y balanceo de ruedas.<br>
+									· Rectificación de discos.<br>
+									· Reparación de motores.<br>
+									· Limpieza de Inyectores.<br>
+									· Laboratorio diésel.<br>
+									· Diagnóstico con “Tester Inteligente Toyota”.<br>
+									· Diagnósticos y reparación de sistema eléctrico y sistema EFI, ABS y elementos de alta tecnología.</p>
+										</div>
+						</div>
+						
+					
+					</div>
+
+			<div class="list card" ng-if="idCategoria == 1">
+					
+						<div class="item item-thumbnail-left item-text-wrap">
+								<img src="img/iconos-talleres/taller-de-pintura.png">
+							<h2 class="item-text-center" style="font-size: large;"><b>{{categorias[idCategoria]}}</b></h2	>
+						</div>
+					
+						<div class="item item-body">
+							<img class="full-image" src="img/iconos-talleres/pintura.JPG">
+								<div class="entry-content">
+										<h3><strong>Servicios Taller de Pintura:</strong></h3>
+										<p>· Servicio de enderezado y pintura a nivel nacional.<br>
+										· Servicio de reparaciones de pintura express en 24 horas único en el país .<br>
+										· Cambio de cristales.<br>
+										· Pulidos de faros, vidrios, y carrocería general.<br>
+										· Alineación de chasis.<br>
+										· Productos de limpieza y cuidado del vehículo.<br>
+										· Recepción y reparación de vehículos multimarca. (Solo en Tgu.)<br>
+										· Avalúo de vehículos.</p>
+									
+										<h3><strong>Beneficios</strong></h3>
+										<p>Nuestros productos y procesos contribuyen con la mitigación del cambio climático gracias a nuestro programa de responsabilidad ambiental y social.</p>
+										<p>Asesoría y trámite con las compañías de seguros.</p>
+										<p>Contamos con una cabina de pintura y secado mediante rayos infrarrojos, que permiten reducir el tiempo de trabajo dependiendo del tamaño de la pieza que va desde los 20 segundos hasta los 5 minutos.</p>
+										<p>Atención y asesoría personalizada, el cliente recibe actualizaciones sobre el estatus de su vehículo mediante correo electrónico, llamada telefónica y envío de fotografías de cada paso en el proceso.</p>
+										<p>&nbsp;</p>
+								</div>
+						</div>
+						
+					
+					</div>
+
+			<div class="list card" ng-if="idCategoria == 2">
+					
+						<div class="item item-thumbnail-left item-text-wrap">
+								<img src="img/iconos-talleres/taller-movil.png">
+							<h2 class="item-text-center" style="font-size: large;"><b>{{categorias[idCategoria]}}</b></h2	>
+						</div>
+					
+						<div class="item item-body">
+							<img class="full-image" src="img/iconos-talleres/express.JPG">
+									<div class="entry-content">
+												<div class="vc_row wpb_row vc_row-fluid mpc-row"><div class="wpb_column vc_column_container vc_col-sm-12 mpc-column" data-column-id="mpc_column-645a8248a09827b"><div class="vc_column-inner "><div class="wpb_wrapper">
+											<div class="wpb_text_column wpb_content_element ">
+												<div class="wpb_wrapper">
+													<h3><strong>Servicios de taller Móvil:</strong></h3>
+										<p><span>· Servicio de Mantenimiento preventivo</span><br><span>· Limpieza y ajuste de frenos</span><br><span>· Cambio de banda de tiempo</span><br><span>· Cambio de zapatas traseras y forros delanteros de frenos</span><span class="text_exposed_show"><br>
+										· Cambio de amortiguadores<br>
+										· Afinamiento de motor diesel y gasolina<br>
+										· Diagnóstico electrónico<br>
+										· Revisión de luces en general<br>
+										· Limpieza de inyectores electrónicos<br>
+										· Flush de aire acondicionado<br>
+										· Cambio de aceite de motor, caja y diferencial<br>
+										· Balanceo de ruedas<br>
+										· Pulido de discos de frenos</span></p>
+									
+												</div>
+											</div>
+										</div></div></div></div>
+											</div>
+						</div>
+						
+					
+					</div>
+
+			<div class="list card" ng-if="idCategoria == 3">
+					
+						<div class="item item-thumbnail-left item-text-wrap">
+								<img src="img/iconos-talleres/taller-express.png">
+							<h2 class="item-text-center" style="font-size: large;"><b>{{categorias[idCategoria]}}</b></h2	>
+						</div>
+					
+						<div class="item item-body">
+							<img class="full-image" src="img/iconos-talleres/movil.JPG">
+									<div class="entry-content">
+											<h3><strong>¿Sin tiempo para realizar los mantenimientos de su vehículo?</strong></h3>
+									<p>Con nuestro servicio de Bahía Express* efectuamos la revisión preventiva de su vehículo en tan solo 60 minutos, permitiéndole ahorrar tiempo y dinero.</p>
+									<p>Ya no tiene que preocuparse por tener su vehículo todo el día en el taller. Ahora usted podrá esperarlo y asegurarse del trabajo que se le realiza observando la pantalla de control ubicada en nuestra confortable sala de espera.</p>
+										
+									</div>
+						</div>
+						
+					
+					</div>
+
+
+		<div class="list" ng-show="error">
+		  <div class="item item-button-right" style="white-space:inherit;">
+		    Ocurrio un error en la red, ¿Quiere intentar de nuevo?
+		    <button class="button button-assertive-custom" ng-click="getCategories()">
+		      Si
+		    </button>
+		  </div>
+		</div>
+			
+	</ion-content>
+	
+
+		<ion-footer-bar align-title="left" class="bar-assertive">			
+				<div class="bar bar-footer bar-assertive" style="padding:0px;">
+						<button class="button button-block button-assertive-custom" style="margin:0px;" ng-click="CallTel('2216-4000')" >Llamar</button>
+					</div>
+		</ion-footer-bar>
+
+
+	
+
+</ion-view>
