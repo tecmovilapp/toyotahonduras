@@ -8,12 +8,12 @@
   </div>
 </div>
 	<ion-content class="has-header">		
+			<img class="full-image" style="margin: 0 !important; padding: 0 !important;" ng-if="idCat == 1" src="img/banners/sedanesBanner.jpg" >
+			<img class="full-image" style="margin: 0 !important; padding: 0 !important;" ng-if="idCat == 2" src="img/banners/camionetasBanner.jpg" >
+			<img class="full-image" style="margin: 0 !important; padding: 0 !important;" ng-if="idCat == 3" src="img/banners/pickupsBanner.jpg" >
+			<img class="full-image" style="margin: 0 !important; padding: 0 !important;" ng-if="idCat == 4" src="img/banners/deportivosBanner.jpg" >
+			<img class="full-image" style="margin: 0 !important; padding: 0 !important;" ng-if="idCat == 5" src="img/banners/comercialesBanner.jpg" >		
 		<div class="list" ng-if="cars.length>0" ng-show="!error">
-				<img class="full-image" ng-if="idCat == 1" src="img/banners/sedanesBanner.jpg" >
-				<img class="full-image" ng-if="idCat == 2" src="img/banners/camionetasBanner.jpg" >
-				<img class="full-image" ng-if="idCat == 3" src="img/banners/pickupsBanner.jpg" >
-				<img class="full-image" ng-if="idCat == 4" src="img/banners/deportivosBanner.jpg" >
-				<img class="full-image" ng-if="idCat == 5" src="img/banners/comercialesBanner.jpg" >
 		    <a class="item item-thumbnail-left"  ng-repeat="car in cars" href="#/app/main/vehiculos/vehiculos_cat/{{idCat}}/single_vehiculo/{{car.id}}">
 		      <img src="img/cargando_list.jpg" id="item{{car.id}}">
 		      <img src="{{car.foto}}" item-id="{{car.id}}" style="display:none" imageonload>
