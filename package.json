@@ -4,7 +4,8 @@
   "description": "An Ionic project",
   "dependencies": {
     "cordova-android": "6.3.0",
-    "cordova-android-support-gradle-release": "^1.1.5",
+    "cordova-android-support-gradle-release": "^1.2.0",
+    "cordova-ios": "^4.5.4",
     "cordova-plugin-compat": "^1.2.0",
     "gulp": "^3.5.6",
     "gulp-concat": "^2.2.0",
@@ -39,7 +40,8 @@
   ],
   "cordova": {
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "plugins": {
       "cordova-android-support-gradle-release": {
