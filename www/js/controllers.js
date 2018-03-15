@@ -1161,19 +1161,22 @@ angular.module('starter.controllers', [])
   $scope.promos = [];
   $scope.singleP = {};
 
+  /*
   $scope.showSearch = function(){
     $scope.search = true;
-  };
+  };*/
 
   $scope.sharePromo = function(url){
     $api.shareLink(url);
   };
 
+  /*
   $scope.hideSearch = function(){
     $scope.search = false;
     $scope.datos.search = "";
     $scope.searchPromos();
   };
+  */
 
   $scope.searchPromos = function(){
     $scope.numpromos = 1;
@@ -1261,9 +1264,7 @@ angular.module('starter.controllers', [])
   });
 
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
-    if(fromState.name==="app.main" && device.platform==="iOS"){
-      StatusBar.show();
-    }
+    
     if(fromState.name!=="app.promo"){
       $scope.promosByDate = [];
       $scope.promosById = [];
@@ -1277,6 +1278,10 @@ angular.module('starter.controllers', [])
       $timeout(function(){
         $scope.getPromos();
       },500);
+    }
+
+    if(fromState.name==="app.main" && device.platform==="iOS"){
+      StatusBar.show();
     }
   });
 
@@ -1332,9 +1337,7 @@ angular.module('starter.controllers', [])
   });
 
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
-    if(fromState.name==="app.main" && device.platform==="iOS"){
-      StatusBar.show();
-    }
+    
     if(fromState.name==="app.main"){
       $scope.numNews = 1;
       $scope.newsL = [];
@@ -1342,10 +1345,16 @@ angular.module('starter.controllers', [])
         $scope.getNews();
       },500);
     }
+
+    if(fromState.name==="app.main" && device.platform==="iOS"){
+      StatusBar.show();
+    }
   });
 })//FIN NOTICIAS
 
 .controller('locationsCtrl', function($scope, $api, $ionicModal, $timeout, $ionicSideMenuDelegate) {
+  
+  console.log("Ubicaciones Ctrl");
   $ionicSideMenuDelegate.canDragContent(false);
   $scope.numLocations = 1;
   $scope.locations = [];
@@ -1354,7 +1363,7 @@ angular.module('starter.controllers', [])
   $scope.search = false;
   $scope.datos = {search: ""};
 
-
+  
   
   $scope.openSingleLocation = function(nombre, lat, lng) {
       window.location.href = '#/app/main/locations/single_location/'+nombre+'/'+lat+'/'+lng;
@@ -1404,12 +1413,15 @@ angular.module('starter.controllers', [])
     $scope.search = true;
   };
 
+  /*
   $scope.hideSearch = function(){
     $scope.search = false;
     $scope.datos.search = "";
     $scope.searchLocations();
   };
+  */
 
+  
   $scope.searchLocations = function(){
     $scope.numLocations = 1;
     $scope.locFilter = [];
@@ -1428,6 +1440,7 @@ angular.module('starter.controllers', [])
       $scope.numLocations = $scope.locFilter.length;
     }
   };
+  
 
   $scope.getLocations = function(){
     $scope.showLoadingGlobal();
@@ -1440,24 +1453,27 @@ angular.module('starter.controllers', [])
       $scope.searchLocations();
     }).error(function(data, status, headers, config) {
         $scope.error= true;
+        
         $scope.hideLoadingGlobal();
     });
   };
 
   $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
-    if(fromState.name==="app.main" && device.platform==="iOS"){
-      StatusBar.show();
-    }
+    
     if(fromState.name!=="app.single_location" && fromState.name!=="app.locations"){
-      $scope.numLocations = 1;
-      $scope.locations = [];
-      $scope.locFilter = [];
-      $scope.error= false;
-      $scope.search = false;
+      //$scope.numLocations = 1;
+      //$scope.locations = [];
+      //$scope.locFilter = [];
+      //$scope.error= false;
+      //$scope.search = false;
       $scope.datos = {search: ""};
       $timeout(function(){
         $scope.getLocations();
       },500);
+    }
+
+    if(fromState.name==="app.main" && device.platform==="iOS"){
+      StatusBar.show();
     }
   });
 
