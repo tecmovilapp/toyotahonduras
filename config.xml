@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="200" id="com.yourappland.corporacionfloreshonduras" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="200005" id="com.yourappland.toyotahonduras" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Toyota Honduras</name>
     <description>
         Otro proyecto realizado por App Land
@@ -81,9 +81,9 @@
     <allow-navigation href="http://192.168.0.14:8100" />
     <allow-navigation href="http://192.168.0.8:8100" />
     <allow-navigation href="http://192.168.0.5:8100" />
+    <engine name="android" spec="6.3.0" />
+    <engine name="ios" spec="^4.5.4" />
     <plugin name="cordova-android-support-gradle-release" spec="^1.2.0">
         <variable name="ANDROID_SUPPORT_VERSION" value="26.+" />
     </plugin>
-    <engine name="android" spec="6.3.0" />
-    <engine name="ios" spec="^4.5.4" />
 </widget>
