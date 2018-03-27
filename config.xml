@@ -4,7 +4,7 @@
     <description>
         Otro proyecto realizado por App Land
     </description>
-  <author email="info@yourappland.com" href="http://yourappland.com/">
+    <author email="info@yourappland.com" href="http://yourappland.com/">
       App Land
     </author>
     <content src="index.html" />
@@ -81,9 +81,9 @@
     <allow-navigation href="http://192.168.0.14:8100" />
     <allow-navigation href="http://192.168.0.8:8100" />
     <allow-navigation href="http://192.168.0.5:8100" />
-    <engine name="android" spec="6.3.0" />
-    <engine name="ios" spec="^4.5.4" />
     <plugin name="cordova-android-support-gradle-release" spec="^1.2.0">
         <variable name="ANDROID_SUPPORT_VERSION" value="26.+" />
     </plugin>
+    <engine name="ios" spec="^4.5.4" />
+    <engine name="android" spec="~6.3.0" />
 </widget>

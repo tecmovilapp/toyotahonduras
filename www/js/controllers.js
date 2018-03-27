@@ -659,6 +659,76 @@ angular.module('starter.controllers', [])
 
   $scope.categoria = "Lubricantes";
 
+  //Accordion Start Marca 0
+  if($scope.idMarca == 0 ){
+    
+    $scope.groups = [];
+    for (var i=0; i<1; i++) {
+      $scope.groups[i] = {
+        name: "Lubricantes Superiores",
+        items: []
+      };
+      for (var j=0; j<1; j++) {
+        $scope.groups[i].items.push(
+          'Las condiciones reales de operación de su motor son severas pero afortunadamente existe Quaker State, brindándole dos veces más protección que otras marcas. En Quaker State nuestro objetivo es optimizar al máximo el rendimiento de su motor. Quaker State le ofrece una gama de productos diseñados para asegurar la máxima protección contra el desgaste, oxidación y acumulación de depósitos de sedimentos y barnices, posibilitando que su vehículo alcance el mejor desempeño siempre. Quaker State resguarda como ninguno los componentes internos de su motor, tales como: transmisión, diferencial, dirección asistida y frenos.'+
+          'Los productos Quaker State son utilizados por el equipo que más campeonatos ha ganado en Nascar en los últimos cinco años: One Sprint Cup y el Team Hendrick Motorsport.'
+        );
+      }
+    }
+    
+       
+  }
+  //Accordion End Marca 0
+
+  //Accordion Start Marca 1
+  if($scope.idMarca == 1 ){
+    
+    $scope.groups = [
+      {
+        name: "Aceites Motorcraft se crearon para el rendimiento y estos:",
+        items : ["Ayudan a mejorar el ahorro de combustible. Ayudan a disminuir los depósitos y residuos que comprometen el rendimiento. Ayudan a proteger las partes cruciales del desgaste."]
+      },
+      {
+        name: "Aceite Premium para motor de Motorcraft",
+        items : ["Completamente formulado con aditivos y aceites con base hidrocraqueados para ayudar a proteger contra los depósitos y desgaste. Ayuda a proteger contra la oxidación por altas temperaturas, gelificación a bajas temperaturas, óxido y corrosión y espuma. Formulado para un fácil arranque en clima frío a temperaturas por debajo de -25°C (-13°F). Grados disponibles: SAE 10W-40."]
+      },
+      {
+        name: "Aceite Premium con mezcla sintética de Motorcraft",
+        items : ["Fabricado con la más alta calidad, aceites con base hidro procesada/sintética y aditivos especialmente formulados para disminuir el desgaste y sedimento del motor. Cumple con la categoría de servicio de conservación de energía/ API SM. Los aceites de mezcla sintética Motorcraft han sido probados detenidamente y se ha encontrado que su desempeño es excelente y protegen los aceites de motor con solventes refinados normales. Disponible en cantidades a granel, el uso de aceites a granel ayuda al medio ambiente. Grados disponibles: SAE 5W-20, 5W-30 Y 10W-30."]
+      },
+      {
+        name: "Aceite completamente sintético de Motorcraft",
+        items : ["Completamente formulado para ayudar a proteger los motores. Recomendado para uso en aplicaciones de motores de gasolina en temperaturas extremas incluyendo motores supercargados, turbo cargados o normalmente aspirados de alto rendimiento. Los aditivos que disminuyen la fricción del aceite sintético 5W-20 de Motorcraft da como resultado una disminución cuantificable del consumo de combustible cuando se compara con el aceite SAE 10W-30. Formulado para proporcionar arranques fáciles a temperaturas de hasta -30°C (-22°F) Grados disponibles: SAE 5W-20, 5W-30 y 5W-50."]
+      },
+      {
+        name: "Aceites Motorcraft para motores diesel",
+        items : ["Fabricados con aceite con base hidro procesada de alta calidad con aditivos diseñados para minimizar el carbón y desgaste y ayuda a proteger los sistemas de tratamiento posterior del escape, como los filtros de particulares. Diseñado específicamente para los motores Power Stroke Diesel. Cumple con la nueva categoría CJ-4 de servicio API. Grados disponibles: SAE 15W-30 y 15W-40"]
+      }
+    ];
+    
+    
+     
+  }
+  //Accordion End Marca 1
+
+
+  //Hide Show Accordion logic
+  /*
+    * if given group is the selected group, deselect it
+    * else, select the given group
+    */
+   $scope.toggleGroup = function(group) {
+    if ($scope.isGroupShown(group)) {
+      $scope.shownGroup = null;
+    } else {
+      $scope.shownGroup = group;
+    }
+  };
+  $scope.isGroupShown = function(group) {
+    return $scope.shownGroup === group;
+  }; 
+
+
   if( $api.getVar("nombre")===null || $api.getVar("identidad")===null || $api.getVar("telefono")===null || $api.getVar("email")===null || $api.getVar("ciudad")===null ) {
     $scope.quote = {nombre:"", telefono:"", email:"", ciudad:"", car:[]};
   } else {
