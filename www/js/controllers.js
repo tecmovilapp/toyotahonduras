@@ -747,6 +747,28 @@ if($scope.idCategoria == 1 && $scope.idMarca == 0 ){
 }
 //Accordion End categoria 1 Marca 0
 
+//Accordion Start categoria 1 Marca 1
+if($scope.idCategoria == 1 && $scope.idMarca == 1 ){
+    
+  $scope.groups = [
+    {
+      name: "Baterías Motorcraft MAX.",
+      items : ["<li>Excelente cobertura de garantía Limitada: 100 Meses (hasta 8 años) millaje ilimitado.</li></br><li>Periodo de reemplazo Gratuito de 36 meses ( 3 años)</li></br><li>Las aleaciones de vida útil larga y el diseño de red optimizado brindan un rendimiento excelente sobre diseños convencionales en condiciones de alta temperatura.</li></br><li>La construcción resistente al calor ayuda a reducir la corrosión, aumentar la vida útil de la batería y proporcionar un ciclo de vida más largo.</li>"]
+    },
+    
+    {
+      name: "Baterías Motorcraft PLUS",
+      items : ["<li>Excelente cobertura de garantía limitada: 84 meses (7 años) millaje ilimitado.</li></br><li>Periodo de reemplazo Gratuito de 18 meses.</li></br><li>La construcción resistente al calor ayuda a reducir la corrosión, aumentar la vida útil de la batería y proporcionar un ciclo de vida más largo.</li>"]
+    }
+
+
+  ];
+  
+    
+}
+//Accordion End categoria 1 Marca 1
+
+
   //Hide Show Accordion logic
   /*
     * if given group is the selected group, deselect it

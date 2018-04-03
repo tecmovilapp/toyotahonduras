@@ -165,23 +165,8 @@
 													</div>
 												  </ion-list>
 
-
-
-
-
-
-								<ul style="text-align: justify;"><li><span></span></li>
-								<h3><strong></strong></h3>
-								<p></p>
-								<ul><li style="text-align: justify;"><span></span></li>
-								<li style="text-align: justify;"><span></span></li>
-								<li style="text-align: justify;"><span></span></li>
-								<li style="text-align: justify;"><span></span></li>
-								<li style="text-align: justify;"><span></span></li>
-								</ul>
 								
-								
-								<hr></div>
+								</div>
 									</div>
 						</div>
 					
@@ -199,16 +184,26 @@
 											<div class="wpb_wrapper">
 													
 									<img class="full-image" src="http://toyota.negociosonline.net/wp-content/uploads/2017/09/Imagen-Familia-Motorcraft-300x172.png">			
-									<h3><strong>Baterías Motorcraft MAX</strong></h3>
-									<ul><li>Excelente cobertura de garantía Limitada: 100 Meses (hasta 8 años) millaje ilimitado.</li>
-									<li>Periodo de reemplazo Gratuito de 36 meses ( 3 años)</li>
-									<li>Las aleaciones de vida útil larga y el diseño de red optimizado brindan un rendimiento excelente sobre diseños convencionales en condiciones de alta temperatura.</li>
-									<li>La construcción resistente al calor ayuda a reducir la corrosión, aumentar la vida útil de la batería y proporcionar un ciclo de vida más largo.</li>
-									<h3><strong>Baterías Motorcraft PLUS</strong></h3>
-									<ul><li>Excelente cobertura de garantía limitada: 84 meses (7 años) millaje ilimitado.</li>
-									<li>Periodo de reemplazo Gratuito de 18 meses.</li>
-									<li>La construcción resistente al calor ayuda a reducir la corrosión, aumentar la vida útil de la batería y proporcionar un ciclo de vida más largo.</li>
-									</ul>
+									
+									
+									<ion-list>
+										<div ng-repeat="group in groups">
+										  <ion-item class="item-stable"
+													ng-click="toggleGroup(group)"
+													ng-class="{active: isGroupShown(group)}">
+											  <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+											
+											<span ng-bind-html="group.name" class="item-text-wrap"></span>
+											
+										  </ion-item>
+										  <ion-item class="item-accordion"
+													ng-repeat="item in group.items"
+													ng-show="isGroupShown(group)">
+											<p ng-bind-html="item" style="line-height: normal !important;"></p>
+										  </ion-item>
+										</div>
+									  </ion-list>
+								
 
 									
 											</div>
