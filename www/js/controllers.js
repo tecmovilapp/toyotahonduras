@@ -659,8 +659,8 @@ angular.module('starter.controllers', [])
 
   $scope.categoria = "Lubricantes";
 
-  //Accordion Start Marca 0
-  if($scope.idMarca == 0 ){
+  //Accordion Start categoria 0 Marca 0
+  if($scope.idCategoria == 0 && $scope.idMarca == 0 ){
     
     $scope.groups = [];
     for (var i=0; i<1; i++) {
@@ -678,10 +678,10 @@ angular.module('starter.controllers', [])
     
        
   }
-  //Accordion End Marca 0
+  //Accordion End categoria 0 Marca 0
 
-  //Accordion Start Marca 1
-  if($scope.idMarca == 1 ){
+  //Accordion Start categoria 0 Marca 1
+  if($scope.idCategoria == 0 && $scope.idMarca == 1 ){
     
     $scope.groups = [
       {
@@ -709,8 +709,37 @@ angular.module('starter.controllers', [])
     
      
   }
-  //Accordion End Marca 1
+  //Accordion End categoria 0 Marca 1
 
+//Accordion Start categoria 0 Marca 2
+if($scope.idCategoria == 0 && $scope.idMarca == 2 ){
+    
+  $scope.groups = [
+    {
+      name: "Aditivos Especializados en la limpieza interna de tu motor.",
+      items : ["Diseñado con Tecnología Sintética.Incorporan los últimos avances de la química molecular al producir aditivos de la más alta calidad bajo componentes sintéticos. Aditivo Oficial Grupo Flores en sus talleres de Servicio y Agencias de Repuestos."]
+    }
+  ];
+  
+  
+   
+}
+//Accordion End categoria 0 Marca 2
+
+//Accordion Start categoria 1 Marca 0
+if($scope.idCategoria == 1 && $scope.idMarca == 0 ){
+    
+  $scope.groups = [
+    {
+      name: "Aditivos Especializados en la limpieza interna de tu motor.",
+      items : ["Diseñado con Tecnología Sintética.Incorporan los últimos avances de la química molecular al producir aditivos de la más alta calidad bajo componentes sintéticos. Aditivo Oficial Grupo Flores en sus talleres de Servicio y Agencias de Repuestos."]
+    }
+  ];
+  
+  
+   
+}
+//Accordion End categoria 0 Marca 2
 
   //Hide Show Accordion logic
   /*

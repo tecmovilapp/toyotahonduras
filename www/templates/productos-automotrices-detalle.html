@@ -112,11 +112,24 @@
 						
 					<div class="wpb_wrapper">
 						<img class="full-image" src="http://toyotahonduras.com/wp-content/uploads/2017/07/Post-EST.png">
+						<ion-list>
+							<div ng-repeat="group in groups">
+							  <ion-item class="item-stable"
+										ng-click="toggleGroup(group)"
+										ng-class="{active: isGroupShown(group)}">
+								  <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+								
+								<span ng-bind-html="group.name" class="item-text-wrap"></span>
+								
+							  </ion-item>
+							  <ion-item class="item-accordion"
+										ng-repeat="item in group.items"
+										ng-show="isGroupShown(group)">
+								<p ng-bind-html="item" style="line-height: normal !important;"></p>
+							  </ion-item>
+							</div>
+						  </ion-list>
 					
-						<h3><strong>Aditivos Especializados en la limpieza interna de tu motor.</strong></h3>
-					<p>Diseñado con Tecnología Sintética.<br>
-					Incorporan los últimos avances de la química molecular al producir aditivos de la más alta calidad bajo componentes sintéticos.<br>
-					Aditivo Oficial Grupo Flores en sus talleres de Servicio y Agencias de Repuestos.<b>&nbsp;</b></p>
 					
 							</div>
 				</div>
@@ -133,7 +146,30 @@
 								<div class="wpb_text_column wpb_content_element ">
 										<div class="wpb_wrapper">
 												<img class="full-image" src="http://toyota.negociosonline.net/wp-content/uploads/2017/09/standard-2-300x180.png">
-											
+								
+												<ion-list>
+													<div ng-repeat="group in groups">
+													  <ion-item class="item-stable"
+																ng-click="toggleGroup(group)"
+																ng-class="{active: isGroupShown(group)}">
+														  <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+														
+														<span ng-bind-html="group.name" class="item-text-wrap"></span>
+														
+													  </ion-item>
+													  <ion-item class="item-accordion"
+																ng-repeat="item in group.items"
+																ng-show="isGroupShown(group)">
+														<p ng-bind-html="item" style="line-height: normal !important;"></p>
+													  </ion-item>
+													</div>
+												  </ion-list>
+
+
+
+
+
+
 								<ul style="text-align: justify;"><li><span>Matsushita sigue innovando, ya que sus baterías para carro Panasonic brindan un rendimiento 20% superior a las tradicionales. Los avances en las investigaciones de Matsushita les permiten a las baterías para carro Panasonic desarrollar:</span></li></ul>
 								<ul style="text-align: justify;"><li><span>Alto rendimiento: Mantienen un rendimiento constante que da la confianza y que facilita el arranque.</span></li>
 								<li><span>Gran capacidad: Con el mismo tamaño, producen más poder eléctrico.</span></li>
