@@ -731,15 +731,21 @@ if($scope.idCategoria == 1 && $scope.idMarca == 0 ){
     
   $scope.groups = [
     {
-      name: "Aditivos Especializados en la limpieza interna de tu motor.",
-      items : ["Diseñado con Tecnología Sintética.Incorporan los últimos avances de la química molecular al producir aditivos de la más alta calidad bajo componentes sintéticos. Aditivo Oficial Grupo Flores en sus talleres de Servicio y Agencias de Repuestos."]
+      name: "Panasonic.",
+      items : ["Matsushita sigue innovando, ya que sus baterías para carro Panasonic brindan un rendimiento 20% superior a las tradicionales. Los avances en las investigaciones de Matsushita les permiten a las baterías para carro Panasonic desarrollar: </br></br><strong>Alto rendimiento:</strong> Mantienen un rendimiento constante que da la confianza y que facilita el arranque.</br></br><strong> Gran capacidad:</strong> Con el mismo tamaño, producen más poder eléctrico. </br></br><strong>A prueba de calor:</strong> Son residentes a las altas temperaturas, por lo que no se deforman ni se ven afectadas en su desempeño Larga vida. Gracias a los avances que se integran como un todo, las baterías para carro Panasonic gozan de una excepcional durabilidad."]
+    },
+    
+    {
+      name: "¿Qué hace diferente a Panasonic?",
+      items : ["La mezcla de las técnicas desarrolladas por Matsushiba Battery CO. Ltda, hace que las baterías para carro Panasonic (Ca Expandido) tengan un excelente desempeño y alta capacidad.</br></br> <strong>Alta capacidad de arranque:</strong> La combinación de técnicas especiales de fabricación les dan, a las baterías para carro libre de mantenimiento de Panasonic, una capacidad de reproducción de energía que optimiza la capacidad de arranque de su vehículo. </br></br><strong>Diseño en función de larga vida:</strong> La batería mantienen su alto desempeño aun en condiciones extremas y por mucho tiempo, de forma que en condiciones normales su vida útil es excepcionalmente larga. </br></br><strong>Características optimas de auto-descarga y consumo de electrolito:</strong> De esta forma el alto desempeño de la batería se mantiene, sin necesidad de añadir agua, durante todo el periodo de expectativa de vida. </br></br><strong>La batería informa su estado:</strong> El diseño de la batería incluye un indicador que señala las condiciones y necesidades de la batería.</br></br> <strong>Seguridad:</strong> Las baterías Panasonic están equipadas con filtros que evitan la combustión y mejoran el continuo desempeño de la batería."]
     }
+
+
   ];
   
-  
-   
+    
 }
-//Accordion End categoria 0 Marca 2
+//Accordion End categoria 1 Marca 0
 
   //Hide Show Accordion logic
   /*
