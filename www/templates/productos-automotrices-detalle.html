@@ -227,32 +227,26 @@
 						<article id="post-573" class="post-573 page type-page status-publish has-post-thumbnail hentry">
 						
 							<div class="entry-content">
-						<img class="full-image" src="http://www.japaneseautocenter.net/wp-content/uploads/2016/01/YOKOHAMA-several-tires.jpg">		
-						<p style="text-align: justify;">Amplia variedad de Llantas de alto rendimiento para automóviles</p>
-						<p style="text-align: justify;">Tecnología 100% Japonesa<br>
-						<span>Fue fundada en 1917.<br>
-						</span><span>Top 10 de los mejores fabricantes de llantas a nivel mundial.<br>
-						</span><span>Empresa Global con más de 20% del mercado Japonés.<br>
-						</span><span>EN Honduras las llantas Yokohama son distribuidoras por Toyopartes agencias de repuestos, desde el 2005.</span></p>
-						<b style="text-align: justify;">¿Porque Yokohama marca la diferencia?</b>
-						<p><span>– Tiene una línea de neumáticos para todas las necesidades en todos los segmentos.<br>
-						</span><span>– Introduce diseños de neumáticos agresivos, innovadores y progresistas al mercado que ayudan a mejorar la estética de su vehículo.<br>
-						</span><span>– Llantas Yokohama rinden tanto en terrenos húmedos como secos.<br>
-						</span><span>– Llantas diseñadas para altos índices de velocidad.</span><span><br>
-						– Yokohama produce llantas para muchas de las marcas más prestigiosas de vehículos a nivel mundial.</span></p>
-						<p style="text-align: justify;">Contamos con gran stock de llantas y rines 12, 14, 15, 16, 17 y 18</p>
-						<p style="text-align: justify;">Por la compra de sus llantas le ofrecemos armado, balanceo y válvula GRATIS</p>
-						<b>Diseños</b>
-						<p><span>– Geolandar A/T-S: Buena conducta en ruta. Actitud todo terreno.<br>
-						</span><span>– Geolandar H/T-S: Desde el manejo diario hasta las incursiones ocasionales en todo terreno, proporciona las estaciones.<br>
-						</span><span>– Geolandar M/T: Proporciona calidad superior en durabilidad y tracción sobre todas las superficies y condiciones climáticas.<br>
-						</span><span>– AVID Tourning – S: Llantas para turismo que cautiva con su grata combinación de confort capacidad y valor.<br>
-						</span><span>– AVID TRZ – S: Llanta para turismo que cautiva con su grata combinación de confort, capacidad y valor.<br>
-						</span><span>– AVID – TRZ: La llanta asimétrica para toda estación, proporciona confianza en condiciones de terreno seco o mojado.<br>
-						</span><span>– AVID ENVIGOR: Ninguna otra llanta ofrece un rendimiento tan completo.</span></p>
-						<h3><strong>Garantía de fábrica:</strong></h3>
-						</span><span>Llantas diseñadas para un rendimiento mínimo de 45,000 a 50,000 Kms.<br>
-						</span><span>*Garantía no incluye daños ocasionados por uso indebido o mal manejo.</span></p>
+						<img class="full-image" src="http://www.japaneseautocenter.net/wp-content/uploads/2016/01/YOKOHAMA-several-tires.jpg">	
+						
+						
+						<ion-list>
+							<div ng-repeat="group in groups">
+								<ion-item class="item-stable"
+										ng-click="toggleGroup(group)"
+										ng-class="{active: isGroupShown(group)}">
+									<i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+								
+								<span ng-bind-html="group.name"></span>
+								
+								</ion-item>
+								<ion-item class="item-accordion"
+										ng-repeat="item in group.items"
+										ng-show="isGroupShown(group)">
+								<p ng-bind-html="item" style="line-height: normal !important;"></p>
+								</ion-item>
+							</div>
+							</ion-list>
 							</div><!-- .entry-content -->
 						
 							</article><!-- #post-## -->
@@ -275,11 +269,26 @@
 													
 													<div class="wpb_wrapper">
 															<img class="full-image" src="http://toyota.negociosonline.net/wp-content/uploads/2017/09/Imagen-Familia-Motorcraft-300x172.png">			
-												<p style="text-align: justify;">Sólo los Repuestos Legítimos están diseñados y fabricados especialmente para su vehículo.
-														
-														Para conducir sin problemas y mantener un mejor valor de reventa, pida siempre Repuestos Legítimos  de las marcas Toyota, Lexus y Daihatsu.
-														
-														Un auto de verdad…merece piezas de verdad.</p>
+												
+															<ion-list>
+																<div ng-repeat="group in groups">
+																	<ion-item class="item-stable"
+																			ng-click="toggleGroup(group)"
+																			ng-class="{active: isGroupShown(group)}">
+																		<i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+																	
+																	<span ng-bind-html="group.name"></span>
+																	
+																	</ion-item>
+																	<ion-item class="item-accordion"
+																			ng-repeat="item in group.items"
+																			ng-show="isGroupShown(group)">
+																	<p ng-bind-html="item" style="line-height: normal !important;"></p>
+																	</ion-item>
+																</div>
+																</ion-list>
+												
+												
 												
 														</div>
 											</div>
@@ -300,8 +309,26 @@
 													
 														<div class="wpb_wrapper">
 																<img class="full-image" src="http://toyotahonduras.com/wp-content/uploads/2017/07/combo.png">			
-													<p style="text-align: justify;">Le ofrecemos variedad de accesorios para equipar su vehículo según sus gustos y preferencias; contamos además con mano de obra especializada en el&nbsp;ramo y nuestro local se encuentra ubicado en un lugar accesible.</p>
 													
+																<ion-list>
+																	<div ng-repeat="group in groups">
+																		<ion-item class="item-stable"
+																				ng-click="toggleGroup(group)"
+																				ng-class="{active: isGroupShown(group)}">
+																			<i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+																		
+																		<span ng-bind-html="group.name"></span>
+																		
+																		</ion-item>
+																		<ion-item class="item-accordion"
+																				ng-repeat="item in group.items"
+																				ng-show="isGroupShown(group)">
+																		<p ng-bind-html="item" style="line-height: normal !important;"></p>
+																		</ion-item>
+																	</div>
+																	</ion-list>
+													
+																
 													
 															</div>
 											</div>

@@ -685,8 +685,8 @@ angular.module('starter.controllers', [])
     
     $scope.groups = [
       {
-        name: "Aceites Motorcraft se crearon para el rendimiento y estos:",
-        items : ["Ayudan a mejorar el ahorro de combustible. Ayudan a disminuir los depósitos y residuos que comprometen el rendimiento. Ayudan a proteger las partes cruciales del desgaste."]
+        name: "Aceites Motorcraft se crearon para el rendimiento y estos",
+        items : ["Ayudan a mejorar el ahorro de combustible. Ayudan a disminuir los depósitos y residuos que comprometen el rendimiento. Ayudan a proteger las partes cruciales del desgaste.</br>"]
       },
       {
         name: "Aceite Premium para motor de Motorcraft",
@@ -767,6 +767,73 @@ if($scope.idCategoria == 1 && $scope.idMarca == 1 ){
     
 }
 //Accordion End categoria 1 Marca 1
+
+
+
+//Accordion Start categoria 2 Marca 0
+if($scope.idCategoria == 2 && $scope.idMarca == 0 ){
+    
+  $scope.groups = [
+    {
+      name: "YOKOHAMA",
+      items : ["Amplia variedad de Llantas de alto rendimiento para automóviles de Tecnología 100% Japonesa, Fue fundada en 1917.</br>Top 10 de los mejores fabricantes de llantas a nivel mundial.</br>Empresa Global con más de 20% del mercado Japonés.</br>EN Honduras las llantas Yokohama son distribuidoras por Toyopartes agencias de repuestos, desde el 2005.</br>"]
+    },
+    
+    {
+      name: "¿Porque marca la diferencia?",
+      items : ["<li>Tiene una línea de neumáticos para todas las necesidades en todos los segmentos.</li></br><li>Introduce diseños de neumáticos agresivos, innovadores y progresistas al mercado que ayudan a mejorar la estética de su vehículo.</li></br><li>Llantas Yokohama rinden tanto en terrenos húmedos como secos.</li></br><li>Llantas diseñadas para altos índices de velocidad.</li></br><li>Yokohama produce llantas para muchas de las marcas más prestigiosas de vehículos a nivel mundial.</li></br><li>Contamos con gran stock de llantas y rines 12, 14, 15, 16, 17 y 18</li><br><li>Por la compra de sus llantas le ofrecemos armado, balanceo y válvula GRATIS</li>"]
+    },
+    {
+      name: "Diseño",
+      items : ["<li>Geolandar A/T-S: Buena conducta en ruta. Actitud todo terreno.</li></br><li>Geolandar H/T-S: Desde el manejo diario hasta las incursiones ocasionales en todo terreno, proporciona las estaciones.</li></br><li>Geolandar M/T: Proporciona calidad superior en durabilidad y tracción sobre todas las superficies y condiciones climáticas.</li></br><li>AVID Tourning – S: Llantas para turismo que cautiva con su grata combinación de confort capacidad y valor.</li></br><li>AVID TRZ – S: Llanta para turismo que cautiva con su grata combinación de confort, capacidad y valor.</li></br><li>AVID – TRZ: La llanta asimétrica para toda estación, proporciona confianza en condiciones de terreno seco o mojado.</li><br><li>AVID ENVIGOR: Ninguna otra llanta ofrece un rendimiento tan completo.</li><br>"]
+    },
+    {
+      name: "Garantía de fábrica",
+      items : ["<li>Llantas diseñadas para un rendimiento mínimo de 45,000 a 50,000 Kms.</li></br><li>Garantía no incluye daños ocasionados por uso indebido o mal manejo.</li>"]
+    }
+
+
+  ];
+  
+    
+}
+//Accordion End categoria 2 Marca 0
+
+
+
+//Accordion Start categoria 3 Marca 0
+if($scope.idCategoria == 3 && $scope.idMarca == 0 ){
+    
+  $scope.groups = [
+    {
+      name: "Accesorios",
+      items : ["Sólo los Repuestos Legítimos están diseñados y fabricados especialmente para su vehículo. Para conducir sin problemas y mantener un mejor valor de reventa, pida siempre Repuestos Legítimos  de las marcas Toyota, Lexus y Daihatsu. Un auto de verdad…merece piezas de verdad."]
+    }
+
+
+  ];
+  
+    
+}
+//Accordion End categoria 3 Marca 0
+
+
+//Accordion Start categoria 4 Marca 0
+if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
+    
+  $scope.groups = [
+    {
+      name: "Repuestos Legítimos",
+      items : ["Le ofrecemos variedad de accesorios para equipar su vehículo según sus gustos y preferencias; contamos además con mano de obra especializada en el&nbsp;ramo y nuestro local se encuentra ubicado en un lugar accesible."]
+    }
+
+
+  ];
+  
+    
+}
+//Accordion End categoria 4 Marca 0
+
 
 
   //Hide Show Accordion logic
