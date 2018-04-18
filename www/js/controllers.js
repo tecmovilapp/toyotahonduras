@@ -731,8 +731,12 @@ if($scope.idCategoria == 0 && $scope.idMarca == 3 ){
     
   $scope.groups = [
     {
-      name: "Toyota Motor Oil.",
-      items : ["Diseñado con Tecnología Sintética.Incorporan los últimos avances de la química molecular al producir aditivos de la más alta calidad bajo componentes sintéticos. Aditivo Oficial Grupo Flores en sus talleres de Servicio y Agencias de Repuestos."]
+      name: "Aceite de motor genuino de Toyota",
+      items : ["Este aceite de motor está formulado con un paquete especial de aditivos que ayuda a proteger las superficies de metal y juntas del motor Toyota contra la corrosión, previene la formación de espuma y mantiene la aplicación correcta de aceite en las paredes de los cilindros.</br></br>Los mejorados del índice de viscosidad estabilizan los niveles de viscosidad para un amplio rango de temperaturas de operación."]
+    },
+    {
+      name: "Aceite de motor sintético",
+      items : ["Este aceite de motor está formulado con un paquete especial de aditivos que ayuda a proteger las superficies de metal y juntas del motor Toyota contra la corrosión, previene la formación de espuma y mantiene la aplicación correcta de aceite en las paredes de los cilindros.</br></br>Los mejorados del índice de viscosidad estabilizan los niveles de viscosidad para un amplio rango de temperaturas de operación.</br><li>Mejora la economía de combustible.</li><li>Mejora la estabilidad térmica.</li><li>Intervalos de cambio de aceite más largos.</li>      "]
     }
   ];
   
