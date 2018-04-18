@@ -726,6 +726,21 @@ if($scope.idCategoria == 0 && $scope.idMarca == 2 ){
 }
 //Accordion End categoria 0 Marca 2
 
+//Accordion Start categoria 0 Marca 2
+if($scope.idCategoria == 0 && $scope.idMarca == 3 ){
+    
+  $scope.groups = [
+    {
+      name: "Toyota Motor Oil.",
+      items : ["Diseñado con Tecnología Sintética.Incorporan los últimos avances de la química molecular al producir aditivos de la más alta calidad bajo componentes sintéticos. Aditivo Oficial Grupo Flores en sus talleres de Servicio y Agencias de Repuestos."]
+    }
+  ];
+  
+  
+   
+}
+//Accordion End categoria 0 Marca 2
+
 //Accordion Start categoria 1 Marca 0
 if($scope.idCategoria == 1 && $scope.idMarca == 0 ){
     

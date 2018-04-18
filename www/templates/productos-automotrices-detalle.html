@@ -135,6 +135,40 @@
 				</div>
 			</div>
 
+			<div class="list card" ng-if="idCategoria == 0 && idMarca == 3">
+				
+				<div class="item  item-text-wrap">
+						<img class="full-image" src="http://toyotahonduras.com/wp-content/uploads/2017/07/EST-logo.png">
+				</div>
+			
+				<div class="item item-body">
+
+						
+					<div class="wpb_wrapper">
+						<img class="full-image" src="http://toyotahonduras.com/wp-content/uploads/2017/07/Post-EST.png">
+						<ion-list>
+							<div ng-repeat="group in groups">
+							  <ion-item class="item-stable"
+										ng-click="toggleGroup(group)"
+										ng-class="{active: isGroupShown(group)}">
+								  <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+								
+								<span ng-bind-html="group.name" class="item-text-wrap"></span>
+								
+							  </ion-item>
+							  <ion-item class="item-accordion"
+										ng-repeat="item in group.items"
+										ng-show="isGroupShown(group)">
+								<p ng-bind-html="item" style="line-height: normal !important;"></p>
+							  </ion-item>
+							</div>
+						  </ion-list>
+					
+					
+							</div>
+				</div>
+			</div>
+
 		
 			<div class="list card" ng-if="idCategoria == 1 && idMarca == 0">
 					
