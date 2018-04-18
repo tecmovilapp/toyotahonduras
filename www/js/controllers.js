@@ -78,6 +78,26 @@ angular.module('starter.controllers', [])
     $scope.modalToyota.remove();
   });
 
+
+  //MODAL OMERHSA
+  $ionicModal.fromTemplateUrl('templates/modal-omerhsa.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modalOmerhsa = modal;
+  });
+
+  $scope.openModalOmerhsa = function() {
+    $scope.modalOmerhsa.show();
+  };
+  $scope.closeModalOmerhsa = function() {
+    $scope.modalOmerhsa.hide();
+  };
+
+  $scope.$on('$destroy', function() {
+    $scope.modalOmerhsa.remove();
+  });
+
   $scope.openFacebookChat = function(){
     $api.openUrl('https://www.facebook.com/messages/t/toyotahonduras/','_system','no');
   };
