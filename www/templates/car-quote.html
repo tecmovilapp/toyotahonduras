@@ -25,23 +25,53 @@
 					<input type="text" ng-model="quote.nombre" placeholder="Nombre">
 				</label>
 				<label class="item item-input">
+					<span class="input-label">Apellido</span>
+					<input type="text" ng-model="quote.apellido" placeholder="Apellido">
+				</label>
+				<label class="item item-input">
+					<span class="input-label"># Identidad</span>
+					<input type="text" ng-model="quote.identidad" placeholder="0801190010000">
+				</label>
+				<label class="item item-input">
 					<span class="input-label">Teléfono</span>
-					<input type="tel" ng-model="quote.telefono" placeholder="98989898" style="width:80%;">					
+					<input type="tel" ng-model="quote.telefono" placeholder="98989898">					
 				</label>
 				<label class="item item-input">
 					<span class="input-label">Email</span>
 					<input type="email" ng-model="quote.email" placeholder="nombre@empresa.com">
 				</label>
+				<label class="item item-input item-select custom-select">
+					<div class="input-label">
+						Sucursal
+					</div>
+					<select ng-model="sucursal">
+					  <option ng-repeat="sucursal in sucursales">{{sucursal.nombre}}</option>
+					</select>
+				  </label>
+				  <label class="item item-input item-select custom-select">
+						<div class="input-label">
+							Modelo
+						</div>
+						<select ng-model="modelo">
+						  <option ng-repeat="modelo in modelos">{{modelo.nombre}}</option>
+						</select>
+					  </label>
+				<label class="item item-input">
+					<span class="input-label">Comentarios</span>
+					<input type="text" ng-model="quote.comentarios" placeholder="Sus Comentarios">					
+				</label>  
+				<!--
 				<label class="item item-input">
 					<span class="input-label">Ciudad</span>
 					<input type="text" ng-model="quote.ciudad" placeholder="Ingresa la ciudad">
 				</label>
+				-->
 		</div>
 
 
 		<div class="row">
 			<div class="col">
-				<button class="button button-block button-assertive-custom button-full" style="margin:0px;" ng-click="sendQuote()">Enviar</button>
+				<button class="button button-block button-assertive-custom button-full" style="margin:0px;" ng-click="sendQuote()">Solicitar Cotización</button>
 			</div>
 		</div>
 

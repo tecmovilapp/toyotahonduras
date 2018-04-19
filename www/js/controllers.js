@@ -406,14 +406,17 @@ angular.module('starter.controllers', [])
   var myRequest = 'action=get-car-data&idCar='+$scope.idCar;
   $scope.bigImage = "";
   if( $api.getVar("nombre")===null || $api.getVar("identidad")===null || $api.getVar("telefono")===null || $api.getVar("email")===null || $api.getVar("ciudad")===null ) {
-    $scope.quote = {nombre:"", telefono:"", email:"", ciudad:"", car:[]};
+    $scope.quote = {nombre:"", apellido:"", identidad:"", telefono:"", email:"", /*ciudad:"",*/ car:[], comentarios:""};
   } else {
     $scope.quote = {
       nombre:$api.getVar("nombre"),
+      apellido:"", 
+      identidad:"",
       telefono:$api.getVar("telefono"), 
       email:$api.getVar("email"), 
-      ciudad:$api.getVar("ciudad"),
-      car:[]
+      /*ciudad:$api.getVar("ciudad"),*/
+      car:[],
+      comentarios:""
     };
   }
 
@@ -443,7 +446,15 @@ angular.module('starter.controllers', [])
     $api.openUrl($scope.car.pdf, "_blank", "yes");
   };
 
-  //COTIZACION
+  //COTIZACION CARRO 
+  $scope.sucursales = [{nombre:"Tegucigalpa, Col. El Prado"}, {nombre:"Tegucigalpa, Anillo Periférico"}, {nombre:"San Pedo Sula"}, {nombre:"La Ceiba"}, {nombre:"Choluteca"}];  
+  $scope.sucursal = $scope.sucursales[0].nombre;
+
+  $scope.modelos = [{nombre:"Agya"}, {nombre:"Etios"}, {nombre:"Yaris"}, {nombre:"Corolla"}, {nombre:"Rush"}, {nombre:"Agya"}, {nombre:"Avanza"}, {nombre:"Rav4"}, {nombre:"Fortuner"}, {nombre:"Land Cruiser Prado"}, {nombre:"Land Cruiser Station Wagon"}, {nombre:"Hilux Cabina Sencilla 4x2"}, {nombre:"Hilux Doble Cabina 4x2"}, {nombre:"Hilux Doble Cabina 4x2 Prerruner"}, {nombre:"Hilux Cabina Sencilla 4x4"}, {nombre:"Hilux Extra Cabina 4x4"}, {nombre:"Hilux Doble Cabina 4x4"}, {nombre:"Land Cruise Pick Up"}, {nombre:"GT 86"}, {nombre:"Hiace Panel"}, {nombre:"Hiace Pasajeros Techo Bajo"}, {nombre:"Hiace Pasajeros Techo Alto"}, {nombre:"Coaster"}];  
+  $scope.modelo = $scope.modelos[0].nombre;
+
+  //$scope.comentarios = "";
+
   $ionicModal.fromTemplateUrl('templates/car-quote.html', {
     scope: $scope,
     animation: 'slide-in-up'
@@ -482,7 +493,9 @@ angular.module('starter.controllers', [])
   });
 
   $scope.sendQuote = function(){
-    var myRequest1 = 'action=send-car-quote&nombre='+$scope.quote.nombre+"&telefono="+$scope.quote.telefono+"&email="+$scope.quote.email+"&ciudad="+$scope.quote.ciudad+"&idCarro="+$scope.quote.car["id"];
+    //var myRequest1 = 'action=send-car-quote&nombre='+$scope.quote.nombre+"&telefono="+$scope.quote.telefono+"&email="+$scope.quote.email+"&ciudad="+$scope.quote.ciudad+"&idCarro="+$scope.quote.car["id"]+"&sucursal="+$scope.sucursal+"&modelo="+$scope.modelo+"&comentarios="+$scope.quote.comentarios+"&apellido="+$scope.quote.apellido+"&identidad="+$scope.quote.identidad;
+    var myRequest1 = 'action=send-car-quote&nombre='+$scope.quote.nombre+"&telefono="+$scope.quote.telefono+"&email="+$scope.quote.email+"&idCarro="+$scope.quote.car["id"]+"&sucursal="+$scope.sucursal+"&modelo="+$scope.modelo+"&comentarios="+$scope.quote.comentarios+"&apellido="+$scope.quote.apellido+"&identidad="+$scope.quote.identidad;
+
     $api.serverRequest(myRequest1).success(function(data, status, headers, config) {
       $scope.hideLoadingGlobal();
       $scope.closeQuote();
@@ -1025,19 +1038,35 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
   ];
   var myRequest = 'action=get-car-category';
   if( $api.getVar("nombre")===null || $api.getVar("identidad")===null || $api.getVar("telefono")===null || $api.getVar("email")===null || $api.getVar("ciudad")===null ) {
-    $scope.quote = {nombre:"", telefono:"", email:"", ciudad:"", car:[]};
+    $scope.quote = {nombre:"", apellido:"", identidad:"", telefono:"", email:"", ciudad:"", car:[], fecha:"", hora:"", chasis:"", placa:"", comentarios:""};
   } else {
     $scope.quote = {
       nombre:$api.getVar("nombre"),
+      apellido:"", 
+      identidad:"",
       telefono:$api.getVar("telefono"), 
       email:$api.getVar("email"), 
       ciudad:$api.getVar("ciudad"),
-      car:[]
+      car:[], 
+      fecha:"", 
+      hora:"", 
+      chasis:"", 
+      placa:"",
+      comentarios:""
     };
   }
 
 
-  //COTIZACION
+  //CITA TALLER
+  $scope.talleres = [{nombre:"Tegucigalpa, Col. El Prado"}, {nombre:"Tegucigalpa, Palmira"}, {nombre:"San Pedro Sula, Blvd. Del Sur"}, {nombre:"Express Centro, SPSa"}, {nombre:"La Ceiba"}, {nombre:"Choluteca"}, {nombre:"Taller Móvil Centro – Sur"}, {nombre:"Taller Móvil Zona Norte"}];  
+  $scope.taller = $scope.talleres[0].nombre;
+
+  $scope.modelos = [{nombre:"Agya"}, {nombre:"Etios"}, {nombre:"Yaris"}, {nombre:"Corolla"}, {nombre:"Rush"}, {nombre:"Agya"}, {nombre:"Avanza"}, {nombre:"Rav4"}, {nombre:"Fortuner"}, {nombre:"Land Cruiser Prado"}, {nombre:"Land Cruiser Station Wagon"}, {nombre:"Hilux Cabina Sencilla 4x2"}, {nombre:"Hilux Doble Cabina 4x2"}, {nombre:"Hilux Doble Cabina 4x2 Prerruner"}, {nombre:"Hilux Cabina Sencilla 4x4"}, {nombre:"Hilux Extra Cabina 4x4"}, {nombre:"Hilux Doble Cabina 4x4"}, {nombre:"Land Cruise Pick Up"}, {nombre:"GT 86"}, {nombre:"Hiace Panel"}, {nombre:"Hiace Pasajeros Techo Bajo"}, {nombre:"Hiace Pasajeros Techo Alto"}, {nombre:"Coaster"}];  
+  $scope.modelo = $scope.modelos[0].nombre;
+
+  $scope.tipos = [{nombre:"Preventivo"}, {nombre:"Correctivo"}, {nombre:"General"}, {nombre:"Pintura"}];  
+  $scope.tipo = $scope.tipos[0].nombre;
+
   $ionicModal.fromTemplateUrl('templates/taller-quote.html', {
     scope: $scope,
     animation: 'slide-in-up'
@@ -1061,7 +1090,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
   }
 
   $scope.sendQuoteTaller = function(){
-    var myRequest1 = 'action=send-quote-taller&nombre='+$scope.quote.nombre+"&telefono="+$scope.quote.telefono+"&email="+$scope.quote.email+"&ciudad="+$scope.quote.ciudad+"&descripcion="+$scope.categorias[$scope.idCategoria];
+    var myRequest1 = 'action=send-quote-taller&nombre='+$scope.quote.nombre+"&apellido="+$scope.quote.apellido+"&identidad="+$scope.quote.identidad+"&telefono="+$scope.quote.telefono+"&email="+$scope.quote.email+"&ciudad="+$scope.quote.ciudad+"&modelo="+$scope.modelo+"&taller="+$scope.taller+"&tipo="+$scope.tipo+"&fecha="+$scope.quote.fecha+"&hora="+$scope.quote.hora+"&chasis="+$scope.quote.chasis+"&placa="+$scope.quote.placa+"&comentarios="+$scope.quote.comentarios;
     $api.serverRequest(myRequest1).success(function(data, status, headers, config) {
       $scope.hideLoadingGlobal();
       $scope.closeQuoteTaller();

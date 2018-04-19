@@ -1,12 +1,10 @@
 <ion-modal-view>
 	<div class="bar bar-header bar-stable">
-	  <button class="button button-icon icon ion-close-round" ng-click="closeQuoteTaller();"></button>
+		<h1 class="title">Cita de Taller</h1>
+	  	<button class="button button-icon icon ion-close-round" ng-click="closeQuoteTaller();"></button>
 	</div>
-	<h1 class="title">Cita de Taller</h1>
 	
-	<ion-content class="has-header">
-
-		
+	<ion-content class="has-header">		
 
 		<div class="list">
 				<img class="full-image" style="margin: 0 !important; padding: 0 !important;" src="img/banners/llega.jpg" >	
@@ -25,6 +23,14 @@
 					<input type="text" ng-model="quote.nombre" placeholder="Nombre">
 				</label>
 				<label class="item item-input">
+					<span class="input-label">Apellido</span>
+					<input type="text" ng-model="quote.apellido" placeholder="Apellido">
+				</label>
+				<label class="item item-input">
+					<span class="input-label"># Identidad</span>
+					<input type="text" ng-model="quote.identidad" placeholder="0801190010000">
+				</label>
+				<label class="item item-input">
 					<span class="input-label">Teléfono</span>
 					<input type="tel" ng-model="quote.telefono" placeholder="98989898" style="width:80%;">					
 				</label>
@@ -32,10 +38,56 @@
 					<span class="input-label">Email</span>
 					<input type="email" ng-model="quote.email" placeholder="nombre@empresa.com">
 				</label>
+				<label class="item item-input item-select custom-select">
+					<div class="input-label">
+						Modelo
+					</div>
+					<select ng-model="modelo">
+						<option ng-repeat="modelo in modelos">{{modelo.nombre}}</option>
+					</select>
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Chasis</span>
+					<input type="text" ng-model="quote.chasis" placeholder="Numero de Chasis">
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Placa</span>
+					<input type="text" ng-model="quote.placa" placeholder="Numero de Placa">
+				</label>
+				<label class="item item-input item-select custom-select">
+					<div class="input-label">
+						Taller
+					</div>
+					<select ng-model="taller">
+						<option ng-repeat="taller in talleres">{{taller.nombre}}</option>
+					</select>
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Fecha</span>
+					<input type="date" ng-model="quote.fecha" placeholder="Fecha">
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Hora</span>
+					<input type="text" ng-model="quote.hora" placeholder="10:00 a.m.">
+				</label>
+				<label class="item item-input item-select custom-select">
+					<div class="input-label">
+						Tipo de Mantenimiento
+					</div>
+					<select ng-model="tipo">
+						<option ng-repeat="tipo in tipos">{{tipo.nombre}}</option>
+					</select>
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Comentarios</span>
+					<input type="text" ng-model="quote.comentarios" placeholder="Sus Comentarios">					
+				</label>  
+				<!--
 				<label class="item item-input">
 					<span class="input-label">Ciudad</span>
 					<input type="text" ng-model="quote.ciudad" placeholder="Ingresa la ciudad">
 				</label>
+				-->	
 		</div>
 
 
