@@ -42,7 +42,7 @@
 					<div class="input-label">
 						Modelo
 					</div>
-					<select ng-model="modelo">
+					<select ng-model="modelo" ng-change="updateModelo()">
 						<option ng-repeat="modelo in modelos">{{modelo.nombre}}</option>
 					</select>
 				</label>
@@ -58,7 +58,7 @@
 					<div class="input-label">
 						Taller
 					</div>
-					<select ng-model="taller">
+					<select ng-model="taller" ng-change="updateTaller()">
 						<option ng-repeat="taller in talleres">{{taller.nombre}}</option>
 					</select>
 				</label>
@@ -74,7 +74,7 @@
 					<div class="input-label">
 						Tipo de Mantenimiento
 					</div>
-					<select ng-model="tipo">
+					<select ng-model="tipo" ng-change="updateTipo()">
 						<option ng-repeat="tipo in tipos">{{tipo.nombre}}</option>
 					</select>
 				</label>

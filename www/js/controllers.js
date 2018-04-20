@@ -59,6 +59,10 @@ angular.module('starter.controllers', [])
   },2500)
 
 
+  $scope.openMiToyota = function() {
+    $api.openUrl('http://toyotahonduras.com','_system','no');
+  };
+
   //MODAL TOYOTA
   $ionicModal.fromTemplateUrl('templates/modal-toyota.html', {
     scope: $scope,
@@ -113,6 +117,10 @@ angular.module('starter.controllers', [])
   $scope.openToyota = function(){
     $api.openUrl('http://toyotahonduras.com','_system','no');
   };
+
+  $scope.CallTel = function(tel) {
+      window.location.href = 'tel:'+ tel;
+  }
 
   $scope.getAds = function(){
     $api.serverRequest(myRequest).success(function(data, status, headers, config) {
@@ -449,9 +457,16 @@ angular.module('starter.controllers', [])
   //COTIZACION CARRO 
   $scope.sucursales = [{nombre:"Tegucigalpa, Col. El Prado"}, {nombre:"Tegucigalpa, Anillo Periférico"}, {nombre:"San Pedo Sula"}, {nombre:"La Ceiba"}, {nombre:"Choluteca"}];  
   $scope.sucursal = $scope.sucursales[0].nombre;
+  $scope.updateSucursal = function() {
+      $scope.sucursal = this.sucursal;
+  };
 
   $scope.modelos = [{nombre:"Agya"}, {nombre:"Etios"}, {nombre:"Yaris"}, {nombre:"Corolla"}, {nombre:"Rush"}, {nombre:"Agya"}, {nombre:"Avanza"}, {nombre:"Rav4"}, {nombre:"Fortuner"}, {nombre:"Land Cruiser Prado"}, {nombre:"Land Cruiser Station Wagon"}, {nombre:"Hilux Cabina Sencilla 4x2"}, {nombre:"Hilux Doble Cabina 4x2"}, {nombre:"Hilux Doble Cabina 4x2 Prerruner"}, {nombre:"Hilux Cabina Sencilla 4x4"}, {nombre:"Hilux Extra Cabina 4x4"}, {nombre:"Hilux Doble Cabina 4x4"}, {nombre:"Land Cruise Pick Up"}, {nombre:"GT 86"}, {nombre:"Hiace Panel"}, {nombre:"Hiace Pasajeros Techo Bajo"}, {nombre:"Hiace Pasajeros Techo Alto"}, {nombre:"Coaster"}];  
   $scope.modelo = $scope.modelos[0].nombre;
+  $scope.updateModelo = function() {
+      $scope.modelo = this.modelo;
+  };
+
 
   //$scope.comentarios = "";
 
@@ -474,6 +489,13 @@ angular.module('starter.controllers', [])
   });
 
   //PRUEBA MANEJO
+  $scope.sucursalesPrueba = [{nombre:"Tegucigalpa, Col. El Prado"}, {nombre:"Tegucigalpa, Anillo Periférico"}, {nombre:"San Pedo Sula"}, {nombre:"La Ceiba"}, {nombre:"Choluteca"}];  
+  $scope.sucursalPrueba = $scope.sucursalesPrueba[0].nombre;
+
+  $scope.modelosPrueba = [{nombre:"Agya"}, {nombre:"Etios"}, {nombre:"Yaris"}, {nombre:"Corolla"}, {nombre:"Rush"}, {nombre:"Agya"}, {nombre:"Avanza"}, {nombre:"Rav4"}, {nombre:"Fortuner"}, {nombre:"Land Cruiser Prado"}, {nombre:"Land Cruiser Station Wagon"}, {nombre:"Hilux Cabina Sencilla 4x2"}, {nombre:"Hilux Doble Cabina 4x2"}, {nombre:"Hilux Doble Cabina 4x2 Prerruner"}, {nombre:"Hilux Cabina Sencilla 4x4"}, {nombre:"Hilux Extra Cabina 4x4"}, {nombre:"Hilux Doble Cabina 4x4"}, {nombre:"Land Cruise Pick Up"}, {nombre:"GT 86"}, {nombre:"Hiace Panel"}, {nombre:"Hiace Pasajeros Techo Bajo"}, {nombre:"Hiace Pasajeros Techo Alto"}, {nombre:"Coaster"}];  
+  $scope.modeloPrueba = $scope.modelosPrueba[0].nombre;
+
+
   $ionicModal.fromTemplateUrl('templates/prueba-manejo.html', {
     scope: $scope,
     animation: 'slide-in-up'
@@ -507,7 +529,7 @@ angular.module('starter.controllers', [])
   };
 
   $scope.sendPruebaManejo = function(){
-    var myRequest1 = 'action=send-prueba-manejo&nombre='+$scope.quote.nombre+"&telefono="+$scope.quote.telefono+"&email="+$scope.quote.email+"&ciudad="+$scope.quote.ciudad+"&idCarro="+$scope.quote.car["id"];
+    var myRequest1 = 'action=send-quote-manejo&nombre='+$scope.quote.nombre+"&telefono="+$scope.quote.telefono+"&email="+$scope.quote.email+"&idCarro="+$scope.quote.car["id"]+"&sucursal="+$scope.sucursal+"&modelo="+$scope.modelo+"&comentarios="+$scope.quote.comentarios+"&apellido="+$scope.quote.apellido+"&identidad="+$scope.quote.identidad;
     $api.serverRequest(myRequest1).success(function(data, status, headers, config) {
       $scope.hideLoadingGlobal();
       $scope.closeQuote();
@@ -906,13 +928,17 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
 
 
   if( $api.getVar("nombre")===null || $api.getVar("identidad")===null || $api.getVar("telefono")===null || $api.getVar("email")===null || $api.getVar("ciudad")===null ) {
-    $scope.quote = {nombre:"", telefono:"", email:"", ciudad:"", car:[]};
+    $scope.quote = {nombre:"", apellido:"", identidad:"", chasis:"", comentarios:"", telefono:"", email:"", ciudad:"", car:[]};
   } else {
     $scope.quote = {
       nombre:$api.getVar("nombre"),
       telefono:$api.getVar("telefono"), 
       email:$api.getVar("email"), 
       ciudad:$api.getVar("ciudad"),
+      apellido:"", 
+      identidad:"", 
+      chasis:"", 
+      comentarios:"",
       car:[]
     };
   }
@@ -921,7 +947,20 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
       window.location.href = 'tel:'+ tel;
   }
 
-  //COTIZACION
+  //COTIZACION PRODUCTOS
+  $scope.sucursales = [{nombre:"Tegucigalpa, Col. El Prado"}, {nombre:"Tegucigalpa, Anillo Periférico"}, {nombre:"San Pedo Sula"}, {nombre:"La Ceiba"}, {nombre:"Choluteca"}];  
+  $scope.sucursal = $scope.sucursales[0].nombre;
+  $scope.updateSucursal = function() {
+      $scope.sucursal = this.sucursal;
+  };
+
+  $scope.modelos = [{nombre:"Agya"}, {nombre:"Etios"}, {nombre:"Yaris"}, {nombre:"Corolla"}, {nombre:"Rush"}, {nombre:"Agya"}, {nombre:"Avanza"}, {nombre:"Rav4"}, {nombre:"Fortuner"}, {nombre:"Land Cruiser Prado"}, {nombre:"Land Cruiser Station Wagon"}, {nombre:"Hilux Cabina Sencilla 4x2"}, {nombre:"Hilux Doble Cabina 4x2"}, {nombre:"Hilux Doble Cabina 4x2 Prerruner"}, {nombre:"Hilux Cabina Sencilla 4x4"}, {nombre:"Hilux Extra Cabina 4x4"}, {nombre:"Hilux Doble Cabina 4x4"}, {nombre:"Land Cruise Pick Up"}, {nombre:"GT 86"}, {nombre:"Hiace Panel"}, {nombre:"Hiace Pasajeros Techo Bajo"}, {nombre:"Hiace Pasajeros Techo Alto"}, {nombre:"Coaster"}];  
+  $scope.modelo = $scope.modelos[0].nombre;
+  $scope.updateModelo = function() {
+      $scope.modelo = this.modelo;
+  };
+  
+
   $ionicModal.fromTemplateUrl('templates/productos-quote.html', {
     scope: $scope,
     animation: 'slide-in-up'
@@ -945,7 +984,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
   }
 
   $scope.sendQuoteProductos = function(){
-    var myRequest1 = 'action=send-quote-productos&nombre='+$scope.quote.nombre+"&telefono="+$scope.quote.telefono+"&email="+$scope.quote.email+"&ciudad="+$scope.quote.ciudad+"&descripcion="+$scope.categorias[$scope.idCategoria];
+    var myRequest1 = 'action=send-quote-productos&nombre='+$scope.quote.nombre+"&telefono="+$scope.quote.telefono+"&email="+$scope.quote.email+"&ciudad="+$scope.quote.ciudad+"&descripcion="+$scope.categorias[$scope.idCategoria]+"&apellido="+$scope.quote.apellido+"&identidad="+$scope.quote.identidad+"&descripcion="+$scope.categorias[$scope.idCategoria]+"&chasis="+$scope.quote.chasis+"&comentarios="+$scope.quote.comentarios+"&sucursal="+$scope.sucursal+"&modelo="+$scope.modelo;
     $api.serverRequest(myRequest1).success(function(data, status, headers, config) {
       $scope.hideLoadingGlobal();
       $scope.closeQuoteProductos();
@@ -1058,14 +1097,23 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
 
 
   //CITA TALLER
-  $scope.talleres = [{nombre:"Tegucigalpa, Col. El Prado"}, {nombre:"Tegucigalpa, Palmira"}, {nombre:"San Pedro Sula, Blvd. Del Sur"}, {nombre:"Express Centro, SPSa"}, {nombre:"La Ceiba"}, {nombre:"Choluteca"}, {nombre:"Taller Móvil Centro – Sur"}, {nombre:"Taller Móvil Zona Norte"}];  
+  $scope.talleres = [{nombre:"Tegucigalpa, Col. El Prado"}, {nombre:"Tegucigalpa, Palmira"}, {nombre:"San Pedro Sula, Blvd. Del Sur"}, {nombre:"Express Centro, SPS"}, {nombre:"La Ceiba"}, {nombre:"Choluteca"}, {nombre:"Taller Móvil Centro – Sur"}, {nombre:"Taller Móvil Zona Norte"}];  
   $scope.taller = $scope.talleres[0].nombre;
+  $scope.updateTaller = function() {
+      $scope.taller = this.taller;
+  };
 
   $scope.modelos = [{nombre:"Agya"}, {nombre:"Etios"}, {nombre:"Yaris"}, {nombre:"Corolla"}, {nombre:"Rush"}, {nombre:"Agya"}, {nombre:"Avanza"}, {nombre:"Rav4"}, {nombre:"Fortuner"}, {nombre:"Land Cruiser Prado"}, {nombre:"Land Cruiser Station Wagon"}, {nombre:"Hilux Cabina Sencilla 4x2"}, {nombre:"Hilux Doble Cabina 4x2"}, {nombre:"Hilux Doble Cabina 4x2 Prerruner"}, {nombre:"Hilux Cabina Sencilla 4x4"}, {nombre:"Hilux Extra Cabina 4x4"}, {nombre:"Hilux Doble Cabina 4x4"}, {nombre:"Land Cruise Pick Up"}, {nombre:"GT 86"}, {nombre:"Hiace Panel"}, {nombre:"Hiace Pasajeros Techo Bajo"}, {nombre:"Hiace Pasajeros Techo Alto"}, {nombre:"Coaster"}];  
   $scope.modelo = $scope.modelos[0].nombre;
+  $scope.updateModelo = function() {
+      $scope.modelo = this.modelo;
+  };
 
   $scope.tipos = [{nombre:"Preventivo"}, {nombre:"Correctivo"}, {nombre:"General"}, {nombre:"Pintura"}];  
   $scope.tipo = $scope.tipos[0].nombre;
+  $scope.updateTipo = function() {
+      $scope.tipo = this.tipo;
+  };
 
   $ionicModal.fromTemplateUrl('templates/taller-quote.html', {
     scope: $scope,
@@ -1510,13 +1558,14 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
 
   $scope.openSinglePromo = function(id) {
     for(var i=0;i<$scope.promoFilter.length;i++){
-      if($scope.promoFilter[i][0].id === id){
+      if($scope.promoFilter[i][0].id === id){              
         $scope.singleP = $scope.promoFilter[i][0];
       } else if( $scope.promoFilter[i][1].id === id ) {
         $scope.singleP = $scope.promoFilter[i][1];
       }
     }
-    $scope.singlePromo.show();
+    $api.openUrl($scope.singleP.enlace,'_system','no');
+    //$scope.singlePromo.show();
   };
   $scope.closeSinglePromo = function() {
     $scope.singlePromo.hide();

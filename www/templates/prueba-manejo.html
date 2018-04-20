@@ -1,10 +1,8 @@
 <ion-modal-view>
-	<div class="bar bar-header bar-stable">
-	  
+	<div class="bar bar-header bar-stable"> 
+		<h1 class="title">Prueba de Manejo</h1>
 	  <button class="button button-icon icon ion-close-round" ng-click="closePruebaManejo();"></button>
 	</div>
-
-	<h1 class="title">Prueba de Manejo</h1>
 	<ion-content class="has-header">
 
 		
@@ -27,6 +25,14 @@
 					<input type="text" ng-model="quote.nombre" placeholder="Nombre">
 				</label>
 				<label class="item item-input">
+					<span class="input-label">Apellido</span>
+					<input type="text" ng-model="quote.apellido" placeholder="Apellido">
+				</label>
+				<label class="item item-input">
+					<span class="input-label"># Identidad</span>
+					<input type="text" ng-model="quote.identidad" placeholder="0801190010000">
+				</label>
+				<label class="item item-input">
 					<span class="input-label">Teléfono</span>
 					<input type="tel" ng-model="quote.telefono" placeholder="98989898" style="width:80%;">					
 				</label>
@@ -34,10 +40,28 @@
 					<span class="input-label">Email</span>
 					<input type="email" ng-model="quote.email" placeholder="nombre@empresa.com">
 				</label>
-				<label class="item item-input">
-					<span class="input-label">Ciudad</span>
-					<input type="text" ng-model="quote.ciudad" placeholder="Ingresa la ciudad">
+				<label class="item item-input item-select custom-select">
+					<div class="input-label">
+						Sucursal
+					</div>
+					<select ng-model="sucursal" ng-options="sucursal.nombre as (sucursal.nombre) for sucursal in sucursales" ng-change="updateSucursal()"> 
+						<!-- <option ng-repeat="sucursalPrueba in sucursalesPrueba">{{sucursalPrueba.nombre}}</option> -->
+						<option></option>
+					</select>
 				</label>
+				<label class="item item-input item-select custom-select">
+					<div class="input-label">
+						Modelo
+					</div>
+					<select ng-model="modelo" ng-options="modelo.nombre as (modelo.nombre) for modelo in modelos" ng-change="updateModelo()">
+						<!-- <option ng-repeat="modeloPrueba in modelosPrueba">{{modeloPrueba.nombre}}</option> -->
+						<option></option>
+					</select>
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Comentarios</span>
+					<input type="text" ng-model="quote.comentarios" placeholder="Sus Comentarios">					
+				</label> 
 		</div>
 
 
