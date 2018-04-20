@@ -60,7 +60,7 @@ angular.module('starter.controllers', [])
 
 
   $scope.openMiToyota = function() {
-    $api.openUrl('http://toyotahonduras.com','_system','no');
+    $api.openUrl('http://toyotahonduras.com/comparador','_system','no');
   };
 
   //MODAL TOYOTA
