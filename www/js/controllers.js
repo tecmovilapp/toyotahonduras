@@ -1904,7 +1904,10 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
       return new Date(year, month, 0).getDate();  
     },
     openUrl: function(url, location, showbar){
-      cordova.InAppBrowser.open(url, location, 'location='+showbar);
+      cordova.InAppBrowser.open(url, '_blank', 'location=yes');
+      //window.open(url, '_system', 'location=yes');
+      //window.open(url, '_self', 'location=yes'),!1;
+      //cordova.InAppBrowser.open(url, location, 'location='+showbar);
     },
     shareLink: function(url){
       window.plugins.socialsharing.share(null, null, null, url);
