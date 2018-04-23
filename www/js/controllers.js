@@ -881,7 +881,7 @@ if($scope.idCategoria == 3 && $scope.idMarca == 0 ){
   $scope.groups = [
     {
       name: "Accesorios",
-      items : ["Sólo los Repuestos Legítimos están diseñados y fabricados especialmente para su vehículo. Para conducir sin problemas y mantener un mejor valor de reventa, pida siempre Repuestos Legítimos  de las marcas Toyota, Lexus y Daihatsu. Un auto de verdad…merece piezas de verdad."]
+      items : ["Le ofrecemos variedad de accesorios para equipar su vehículo según sus gustos y preferencias; contamos además con mano de obra especializada en el ramo y nuestro local se encuentra ubicado en un lugar accesible.</br></br>Encontrará todos los accesorios originales y genéricos para vehículos de las marcas Toyota, Lexus y Daihatsu.</br></br><strong>Estamos ubicados en:</br></strong></br><strong>Agencia CarDepot, Tegucigalpa.</strong></br>Col. El Prado, Parque Automotriz Toyota, vía puente San José, contiguo a Centro Comercial Plaza la Granja, Tel: 2216-4000, Ext. 1453 / 1454 </br></br><strong>Agencias CarDepot, San Pedro Sula.</strong></br> Tel: 2561-8600, 2556-7037, Ext. 2215 / 2216 </br></br><strong>Agencias CarDepot, La Ceiba</br></strong> Tel: 2442-4140, 2442-4711, Ext. 3410 / 341 1.</br></br><strong> Horario de Atención:</br></strong> Lunes a Viernes de 8:00 a.m. a 5:00 p.m. Sábado, de 8:00 a.m. a 12:00 m."]
     }
 
 
