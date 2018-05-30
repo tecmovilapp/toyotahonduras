@@ -1,8 +1,8 @@
 <ion-view view-title="VEHÍCULOS" hide-nav-bar="true">
 <div class="bar bar-header bar-assertive">
   <div class="buttons">
-		<a class="button button-icon icon ion-arrow-left-c" ng-if="idCategoria == 0 || idCategoria == 1" href="#/app/main/vehiculos/productos_automotrices_marcas/{{idCategoria}}"></a>
-		<a class="button button-icon icon ion-arrow-left-c" ng-if="idCategoria == 2 || idCategoria == 3 || idCategoria == 4" href="#/app/main/vehiculos/productos_automotrices"></a>
+		<a class="button button-icon icon ion-arrow-left-c" ng-if="idCategoria == 0 || idCategoria == 1 || idCategoria == 2" href="#/app/main/vehiculos/productos_automotrices_marcas/{{idCategoria}}"></a>
+		<a class="button button-icon icon ion-arrow-left-c" ng-if="idCategoria == 3 || idCategoria == 4" href="#/app/main/vehiculos/productos_automotrices"></a>
 		
   </div>
   <h1 class="title">{{categorias[idCategoria]}}</h1>
@@ -247,7 +247,7 @@
 					
 					</div>
 
-					<div class="list card" ng-if="idCategoria == 2">
+					<div class="list card" ng-if="idCategoria == 2 && idMarca == 0" >
 							
 							<div class="item  item-text-wrap">
 								<img class="full-image" src="http://toyotahonduras.com/wp-content/uploads/2017/07/Yokohama-Logo.png">
@@ -290,6 +290,51 @@
 								</div>
 							
 							</div>
+
+							<div class="list card" ng-if="idCategoria == 2 && idMarca == 1" >
+							
+								<div class="item  item-text-wrap">
+									<img class="full-image" src="http://toyotahonduras.com/wp-content/uploads/2017/07/Yokohama-Logo.png">
+									Kendal
+								</div>
+								
+									<div class="item item-body">
+											<div id="primary" class="content-area">
+													<main id="main" class="site-main" role="main">
+							
+														
+							<article id="post-573" class="post-573 page type-page status-publish has-post-thumbnail hentry">
+							
+								<div class="entry-content">
+							<img class="full-image" src="http://www.japaneseautocenter.net/wp-content/uploads/2016/01/YOKOHAMA-several-tires.jpg">	
+							
+							
+							<ion-list>
+								<div ng-repeat="group in groups">
+									<ion-item class="item-stable"
+											ng-click="toggleGroup(group)"
+											ng-class="{active: isGroupShown(group)}">
+										<i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i>
+									
+									<span ng-bind-html="group.name"></span>
+									
+									</ion-item>
+									<ion-item class="item-accordion"
+											ng-repeat="item in group.items"
+											ng-show="isGroupShown(group)">
+									<p ng-bind-html="item" style="line-height: normal !important;"></p>
+									</ion-item>
+								</div>
+								</ion-list>
+								</div><!-- .entry-content -->
+							
+								</article><!-- #post-## -->
+							
+													</main><!-- #main -->
+												</div>
+									</div>
+								
+								</div>
 
 					<div class="list card" ng-if="idCategoria == 3">
 							
