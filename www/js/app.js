@@ -104,6 +104,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])//, 'ionic-datepicker
     }
   })
 
+  .state('app.productosLocation', {
+    url: '/main/locations/productos_automotrices_location',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/productos-automotrices-location.html',
+        controller: 'productosAutomotricesLocationCtrl'
+      }
+    }
+  })
+
   .state('app.pagos', {
     url: '/main/pagos',
     views: {

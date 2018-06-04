@@ -1851,6 +1851,48 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
 
 })// FIN singleLocationCtrl
 
+
+.controller('productosAutomotricesLocationCtrl', function($scope, $api, $stateParams, $ionicModal, $timeout, $ionicSideMenuDelegate) {
+  $ionicSideMenuDelegate.canDragContent(false);
+  //$scope.nombre = $stateParams.nombre;
+  //$scope.lat = $stateParams.lat;
+  //$scope.lng = $stateParams.lng;
+  $scope.map = null;
+  $scope.initMap = function() {    
+    $scope.map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 14.075405199999999, lng: -87.16798840000001},
+      zoom: 8,
+      mapTypeControl:false,
+      scaleControl: false,
+      streetViewControl: false
+    });
+    $scope.marker = new google.maps.Marker({
+      position: {lat: 14.075405199999999, lng: -87.16798840000001},
+      map: $scope.map,
+      title: "Ubicación 1",
+      labelContent: "ABCD"
+    });
+    $scope.marker = new google.maps.Marker({
+      position: {lat: 14.073369878346934, lng: -87.17693957063341},
+      map: $scope.map,
+      title: "Ubicación 2"
+    });
+  };
+
+  $scope.initMap();
+
+  /*
+  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+    if(fromState.name!=="app.locations"){
+      angular.element( document.querySelector( '#map' ) ).remove();
+      return;
+    }
+    $scope.initMap();
+  });
+  */
+
+})// FIN singleLocationCtrl
+
 .controller('pagosCtrl', function($scope, $ionicSideMenuDelegate,$api, $ionicModal, $timeout) {
   $ionicSideMenuDelegate.canDragContent(false);
   $scope.numPagos = 1;
