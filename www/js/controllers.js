@@ -1866,17 +1866,63 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
       scaleControl: false,
       streetViewControl: false
     });
-    $scope.marker = new google.maps.Marker({
+
+
+    //Marcador 1 INICIO
+    var contentString1 = 
+            '<div id="content">'+
+              '<h2>Ubicación 1</h2>'+
+              '<div>'+
+              '<p><b>Ubicación 1</b>, calle principal 250  ' +
+              'Telefono: 2225-5540 '+
+              '</div>'+
+            '</div>';
+
+    var infowindow1 = new google.maps.InfoWindow({
+      content: contentString1,
+      maxWidth: 300
+    });
+
+    $scope.marker1 = new google.maps.Marker({
       position: {lat: 14.075405199999999, lng: -87.16798840000001},
       map: $scope.map,
       title: "Ubicación 1",
       labelContent: "ABCD"
     });
-    $scope.marker = new google.maps.Marker({
+
+    $scope.marker1.addListener('click', function() {
+      infowindow1.open($scope.map, $scope.marker1);
+    });
+    //Marcador 1 FIN
+
+
+    //Marcador 2 INICIO
+    var contentString2 = 
+            '<div id="content">'+
+              '<h2>Ubicación 2</h2>'+
+              '<div>'+
+              '<p><b>Ubicación 2</b>, calle principal 250  ' +
+              'Telefono: 2225-5540 '+
+              '</div>'+
+            '</div>';
+
+    var infowindow2 = new google.maps.InfoWindow({
+      content: contentString2,
+      maxWidth: 300
+    });
+
+    $scope.marker2 = new google.maps.Marker({
       position: {lat: 14.073369878346934, lng: -87.17693957063341},
       map: $scope.map,
       title: "Ubicación 2"
     });
+
+    $scope.marker2.addListener('click', function() {
+        infowindow2.open($scope.map, $scope.marker2);
+      });
+    //Marcador 2 FIN
+
+
   };
 
   $scope.initMap();
