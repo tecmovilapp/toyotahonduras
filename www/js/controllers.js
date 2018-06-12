@@ -2191,6 +2191,346 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
 
 })// FIN singleLocationCtrl
 
+// INICIO talleresLocationCtrl
+.controller('talleresLocationCtrl', function($scope, $api, $stateParams, $ionicModal, $timeout, $ionicSideMenuDelegate) {
+  $ionicSideMenuDelegate.canDragContent(false);
+  //$scope.nombre = $stateParams.nombre;
+  //$scope.lat = $stateParams.lat;
+  //$scope.lng = $stateParams.lng;
+  $scope.map = null;
+  $scope.initMap = function() {    
+    
+
+    $scope.map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 14.662802, lng: -86.215980},
+      zoom: 8,
+      mapTypeControl:false,
+      scaleControl: false,
+      streetViewControl: false
+    });
+
+    //Marcador 1 INICIO
+    var contentString1 = 
+           '<div id="content">'+
+              '<h2>Juticalpa</h2>'+
+              '<div>'+
+              '<p><b>Corporación Flores</b>, 5ta Avenida. ' +
+              
+              '</div>'+
+            '</div>';
+
+    var infowindow1 = new google.maps.InfoWindow({
+      content: contentString1,
+      maxWidth: 300
+    });
+
+    $scope.marker1 = new google.maps.Marker({
+      position: {lat: 14.662802, lng: -86.215980},
+      map: $scope.map,
+      title: "Ubicación 1",
+      labelContent: "ABCD"
+    });
+
+    $scope.marker1.addListener('click', function() {
+      infowindow1.open($scope.map, $scope.marker1);
+    });
+    //Marcador 1 FIN
+
+
+    //Marcador 2 INICIO
+    var contentString2 = 
+            '<div id="content">'+
+              '<h2>San Pedro Sula</h2>'+
+              '<div>'+
+              '<p><b>Corporación Flores</b>, Centro  ' +
+              'Telefono: 2225-5540 '+
+              '</div>'+
+            '</div>';
+
+    var infowindow2 = new google.maps.InfoWindow({
+      content: contentString2,
+      maxWidth: 300
+    });
+
+    $scope.marker2 = new google.maps.Marker({
+      position: {lat: 15.476734, lng: -88.032951},
+      map: $scope.map,
+      title: "Ubicación 2"
+    });
+
+    $scope.marker2.addListener('click', function() {
+        infowindow2.open($scope.map, $scope.marker2);
+      });
+    //Marcador 2 FIN
+
+
+    //Marcador 3 INICIO
+    var contentString3 = 
+            '<div id="content">'+
+              '<h2>5 ta. Avenida</h2>'+
+              '<div>'+
+              '<p><b>Corporación Flores</b> ,Comayaguela ' +
+              
+              '</div>'+
+            '</div>';
+
+    var infowindow3 = new google.maps.InfoWindow({
+      content: contentString3,
+      maxWidth: 300
+    });
+
+    $scope.marker3 = new google.maps.Marker({
+      position: {lat: 14.095098, lng: -87.209198},
+      map: $scope.map,
+      title: "Ubicación 3"
+    });
+
+    $scope.marker3.addListener('click', function() {
+        infowindow3.open($scope.map, $scope.marker3);
+      });
+    //Marcador 3 FIN
+
+
+    
+    //Marcador 4 INICIO
+    var contentString4 = 
+            '<div id="content">'+
+              '<h2>Danli</h2>'+
+              '<div>'+
+              '<p><b>Corporación Flores</b> ' +
+              'Telefono: 2225-5540 '+
+              '</div>'+
+            '</div>';
+
+    var infowindow4 = new google.maps.InfoWindow({
+      content: contentString4,
+      maxWidth: 300
+    });
+
+    $scope.marker4 = new google.maps.Marker({
+      position: {lat: 14.030524, lng: -86.567733},
+      map: $scope.map,
+      title: "Ubicación 4"
+    });
+
+    $scope.marker4.addListener('click', function() {
+        infowindow4.open($scope.map, $scope.marker4);
+      });
+    //Marcador 4 FIN
+
+    
+    //Marcador 5 INICIO
+    var contentString5 = 
+            '<div id="content">'+
+              '<h2>San Pedro Sula</h2>'+
+              '<div>'+
+              '<p><b>Corporación Flores</b>,Blvd. Del sur  ' +
+             
+              '</div>'+
+            '</div>';
+
+    var infowindow5 = new google.maps.InfoWindow({
+      content: contentString5,
+      maxWidth: 300
+    });
+
+    $scope.marker5 = new google.maps.Marker({
+      position: {lat: 15.476639, lng: -88.032480},
+      map: $scope.map,
+      title: "Ubicación 5"
+    });
+
+    $scope.marker5.addListener('click', function() {
+        infowindow5.open($scope.map, $scope.marker5);
+      });
+    //Marcador 5 FIN
+
+    
+    //Marcador 6 INICIO
+    var contentString6 = 
+            '<div id="content">'+
+              '<h2>Toyota</h2>'+
+              '<div>'+
+              '<p><b>Corporación Flores</b> ,Col. El Prado, Tegucigalpa.  ' +
+             
+              '</div>'+
+            '</div>';
+
+    var infowindow6 = new google.maps.InfoWindow({
+      content: contentString6,
+      maxWidth: 300
+    });
+
+    $scope.marker6 = new google.maps.Marker({
+      position: {lat: 14.083941, lng: -87.206104},
+      map: $scope.map,
+      title: "Ubicación 2"
+    });
+
+    $scope.marker6.addListener('click', function() {
+        infowindow6.open($scope.map, $scope.marker6);
+      });
+    //Marcador 6 FIN
+
+    
+    //Marcador 7 INICIO
+    var contentString7 = 
+            '<div id="content">'+
+              '<h2>Comayagua</h2>'+
+              '<div>'+
+              '<p><b>Corporación Flores</b>, Col. El Prado, Tegucigalpa.  ' +
+             
+              '</div>'+
+            '</div>';
+
+    var infowindow7 = new google.maps.InfoWindow({
+      content: contentString7,
+      maxWidth: 300
+    });
+
+    $scope.marker7 = new google.maps.Marker({
+      position: {lat: 14.466235,  lng: -87.646263},
+      map: $scope.map,
+      title: "Ubicación 2"
+    });
+
+    $scope.marker7.addListener('click', function() {
+        infowindow7.open($scope.map, $scope.marker7);
+      });
+    //Marcador 7 FIN
+
+    
+    //Marcador 8 INICIO
+    var contentString8 = 
+            '<div id="content">'+
+              '<h2>Súper Car</h2>'+
+              '<div>'+
+              '<p><b>Corporación Flores</b>, Tegucigalpa.  ' +
+           
+              '</div>'+
+            '</div>';
+
+    var infowindow8 = new google.maps.InfoWindow({
+      content: contentString8,
+      maxWidth: 300
+    });
+
+    $scope.marker8 = new google.maps.Marker({
+      position: {lat: 14.095599, lng: -87.210143},
+      map: $scope.map,
+      title: "Ubicación 2"
+    });
+
+    $scope.marker8.addListener('click', function() {
+        infowindow8.open($scope.map, $scope.marker8);
+      });
+    //Marcador 8 FIN
+
+    
+    //Marcador 9 INICIO
+    var contentString9 = 
+            '<div id="content">'+
+              '<h2>La Ceiba</h2>'+
+              '<div>'+
+              '<p><b>Corporación Flores</b>, Col. Palmira, Ceiba.  ' +
+              'Telefono: 2225-5540 '+
+              '</div>'+
+            '</div>';
+
+    var infowindow9 = new google.maps.InfoWindow({
+      content: contentString9,
+      maxWidth: 300
+    });
+
+    $scope.marker9 = new google.maps.Marker({
+      position: {lat: 15.755190, lng: -86.832953},
+      map: $scope.map,
+      title: "Ubicación 9"
+    });
+
+    $scope.marker9.addListener('click', function() {
+        infowindow9.open($scope.map, $scope.marker9);
+      });
+    //Marcador 9 FIN
+
+    
+    //Marcador 10 INICIO
+    var contentString10 = 
+            '<div id="content">'+
+              '<h2>Choluteca</h2>'+
+              '<div>'+
+              '<p><b>Corporación Flores</b>, Carretera Guasable.  ' +
+              
+              '</div>'+
+            '</div>';
+
+    var infowindow10 = new google.maps.InfoWindow({
+      content: contentString10,
+      maxWidth: 300
+    });
+
+    $scope.marker10 = new google.maps.Marker({
+      position: {lat: 13.309830, lng: -87.178313},
+      map: $scope.map,
+      title: "Ubicación 10"
+    });
+
+    $scope.marker10.addListener('click', function() {
+        infowindow10.open($scope.map, $scope.marker10);
+      });
+    //Marcador 10 FIN
+
+    
+    //Marcador 11 INICIO
+    var contentString11 = 
+            '<div id="content">'+
+              '<h2>Santa Rosa de Copan</h2>'+
+              '<div>'+
+              '<p><b>Corporación Flores</b>, Santa Rosa de Copan  ' +
+              
+              '</div>'+
+            '</div>';
+
+    var infowindow11 = new google.maps.InfoWindow({
+      content: contentString11,
+      maxWidth: 300
+    });
+
+    $scope.marker11 = new google.maps.Marker({
+      position: {lat: 14.767101, lng: -88.776263},
+      map: $scope.map,
+      title: "Ubicación 11"
+    });
+
+    $scope.marker11.addListener('click', function() {
+        infowindow11.open($scope.map, $scope.marker11);
+      });
+    //Marcador 11 FIN
+
+
+
+
+
+
+
+
+
+  };
+
+  $scope.initMap();
+
+  /*
+  $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+    if(fromState.name!=="app.locations"){
+      angular.element( document.querySelector( '#map' ) ).remove();
+      return;
+    }
+    $scope.initMap();
+  });
+  */
+
+})// FIN talleresLocationCtrl
+
 .controller('pagosCtrl', function($scope, $ionicSideMenuDelegate,$api, $ionicModal, $timeout) {
   $ionicSideMenuDelegate.canDragContent(false);
   $scope.numPagos = 1;
