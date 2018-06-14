@@ -878,22 +878,46 @@ if($scope.idCategoria == 2 && $scope.idMarca == 1 ){
     
   $scope.groups = [
     {
-      name: "KENDAL",
-      items : ["Amplia variedad de Llantas de alto rendimiento para automóviles de Tecnología 100% Japonesa, Fue fundada en 1917.</br>Top 10 de los mejores fabricantes de llantas a nivel mundial.</br>Empresa Global con más de 20% del mercado Japonés.</br>EN Honduras las llantas Yokohama son distribuidoras por Toyopartes agencias de repuestos, desde el 2005.</br>"]
+      name: "Llantas Kenda",
+      items : ["En Kenda Nuestras llantas radiales son diseñadas utilizando la última tecnología y estándares de seguridad para ofrecer el máximo rendimiento , fiabilidad y vida útil del neumático además de estar disponible en una amplia variedad de llantas , los productos Kenda (llantas) son conocidos por su gran rendimiento y fiabilidad a un precio razonable.</br></br>Hoy en día, nuestros investigadores están trabajando constantemente con nuevos materiales, tecnologías y esforzándose para incrementar el rendimiento y la fiabilidad de todas nuestras llantas y productos.</br></br>En un mundo donde el rendimiento, la seguridad es la regla de superioridad, Kenda se está marcando la diferencia. Al proporcionar a la industria automotriz y de millones de conductores en todo el mundo con un producto que se define una ingeniería superior, los neumáticos Kenda ofrecen una experiencia de conducción única.</br>"]
     },
     
     {
-      name: "¿Porque marca la diferencia?",
-      items : ["<li>Tiene una línea de neumáticos para todas las necesidades en todos los segmentos.</li></br><li>Introduce diseños de neumáticos agresivos, innovadores y progresistas al mercado que ayudan a mejorar la estética de su vehículo.</li></br><li>Llantas Yokohama rinden tanto en terrenos húmedos como secos.</li></br><li>Llantas diseñadas para altos índices de velocidad.</li></br><li>Yokohama produce llantas para muchas de las marcas más prestigiosas de vehículos a nivel mundial.</li></br><li>Contamos con gran stock de llantas y rines 12, 14, 15, 16, 17 y 18</li><br><li>Por la compra de sus llantas le ofrecemos armado, balanceo y válvula GRATIS</li>"]
+      name: "Klever A/TKR28",
+      items : ["Todo terreno con la capacidad de abordar su pista favorita local o su ruta de trabajo urbana cotidiana. El diseño único del neumático permite tracción para diversas aplicaciones y condiciones.</br></br><li>Doble construcción ceñidas de acero utilizado para la uniformidad y el desgaste de larga duración.</li></br><li>Capa adicional de protección caucho a lo largo de del rodaje para mejorar la retención de estabilidad y aire de presión de neumáticos.</li></br><li>Tela reforzada en el flanco para aumentar la resistencia de punción.</li>"]
     },
     {
-      name: "Diseño",
-      items : ["<li>Geolandar A/T-S: Buena conducta en ruta. Actitud todo terreno.</li></br><li>Geolandar H/T-S: Desde el manejo diario hasta las incursiones ocasionales en todo terreno, proporciona las estaciones.</li></br><li>Geolandar M/T: Proporciona calidad superior en durabilidad y tracción sobre todas las superficies y condiciones climáticas.</li></br><li>AVID Tourning – S: Llantas para turismo que cautiva con su grata combinación de confort capacidad y valor.</li></br><li>AVID TRZ – S: Llanta para turismo que cautiva con su grata combinación de confort, capacidad y valor.</li></br><li>AVID – TRZ: La llanta asimétrica para toda estación, proporciona confianza en condiciones de terreno seco o mojado.</li><br><li>AVID ENVIGOR: Ninguna otra llanta ofrece un rendimiento tan completo.</li><br>"]
+      name: "Komet Plus KR23",
+      items : ["<li>Touring radial con un diseño de la banda revolucionaria refinado por Kenda NMA tecnología, crea una de las más tranquilos neumáticos en la alineación de Kenda.</li></br><li>Ranuras de canalización de agua para mejorar la tracción sobre mojado y seco.</li></br><li>Caucho compuesto para toda  temporada, magnífica en el Invierno, el rendimiento con el kilometraje sin comparación.</li></br><li>Una tracción fiable en todas las condiciones del manejo al máximo en la  húmeda .</li>"]
     },
     {
-      name: "Garantía de fábrica",
-      items : ["<li>Llantas diseñadas para un rendimiento mínimo de 45,000 a 50,000 Kms.</li></br><li>Garantía no incluye daños ocasionados por uso indebido o mal manejo.</li>"]
-    }
+      name: "Power Master KR12",
+      items : ["<li>Diseño tradicional  de pisada de 5 costillas, permite gran manejo en condiciones  húmedas, junto con un desgaste prolongado.</li></br><li>Cinco costillas en el diseño con cuatro ranuras que ofrecen  un desgaste para prolongar la vida del neumático.</li></br><li>Rodadura  resistente para mayor economía.</li></br>"]
+    },
+    {
+      name: "Koyote KR06",
+      items : ["<li>Mezcla perfecta de durabilidad con la construcción avanzada que proporciona una conducción cómoda, con amplia vida en la  banda de rodadura.</li></br><li>Estructura reforzada con cinturones de acero para aplicaciones de trabajo pesado.</li></br><li>De alto rendimiento del centro de la llanta para una mayor durabilidad.</li></br>"]
+    },
+    {
+      name: "Klever H / PKR 15",
+      items : ["<li>El sólido centro de la costilla provisiona una gran economía  de combustible y capacidad de manejo excelente.</li></br><li>Costados alrededor de la llanta provisiona de una gran dispersión de agua  y reducir los niveles de ruido, haciéndolas mas  seguras y cómodas de manejo.</li></br><li>Costados para mejorar la reducción del ruido y el desgaste uniforme.</li></br><li>Mejora de la comodidad y la reducción del ruido de la carretera.</li>"]
+    },
+    {
+      name: "K630",
+      items : ["<li>De grano en el compuesto, las especificaciones de los neumáticos han fortalecido  la capacidad de carga para trabajo  mas pesado.</li></br><li>Cinco costillas y bandas de rodadura de diseño para una tracción excelente y manipulación.</li></br><li>Cuatro ranuras de ancho circunferencial ayudan  para eliminar el agua.</li>"]
+    },
+    {
+      name: "K631",
+      items : ["<li>La banda de rodamiento de diseño computarizado la  hace un gran neumático.</li></br><li>Excelente Manejo  en condiciones diferentes de carretera.</li></br><li>Equipo de diseño modular que utiliza las formas naturales para mejorar el desgaste y durabilidad.</li></br><li>Lo profundo de la circunferencia en las ranuras potenciales ayudan a  dispersar el agua, brindando un  mayor rendimiento.</li>"]
+    },
+    {
+      name: "KLEVER M/TKR29",
+      items : ["<li>Es una excelente opción para los amantes del Off-Road o individuos que requieren un neumático de alta tracción para su entorno de trabajo.</li></br><li>El compuesto de goma durable soportará los entornos de trabajo más exigentes.</li></br><li>Kenda M/T incorpora zapatas autolimpiables únicas para la tracción máxima durante las condiciones más duras.</li></br><li>Construcción doble cinturón de acero utilizado para la uniformidad y el desgaste de larga duración.</li>"]
+    },
+
+
+
+
 
 
   ];
@@ -1863,7 +1887,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
 
     $scope.map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 14.662802, lng: -86.215980},
-      zoom: 8,
+      zoom: 7,
       mapTypeControl:false,
       scaleControl: false,
       streetViewControl: false
