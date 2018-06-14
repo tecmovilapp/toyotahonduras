@@ -114,6 +114,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])//, 'ionic-datepicker
     }
   })
 
+  .state('app.talleresLocation', {
+    url: '/main/locations/talleres_location',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/talleres-location.html',
+        controller: 'talleresLocationCtrl'
+      }
+    }
+  })
+
   .state('app.pagos', {
     url: '/main/pagos',
     views: {
