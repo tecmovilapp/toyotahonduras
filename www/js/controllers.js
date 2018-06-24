@@ -2236,9 +2236,9 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     //Marcador 1 INICIO
     var contentString1 = 
            '<div id="content">'+
-              '<h2>Juticalpa</h2>'+
+              '<h2>Taller Corporación Flores</h2>'+
               '<div>'+
-              '<p><b>Corporación Flores</b>, 5ta Avenida. ' +
+              '<p><b>Corporación Flores</b>,Col. El Prado, Tegucigalpa.' +
               
               '</div>'+
             '</div>';
@@ -2249,7 +2249,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     });
 
     $scope.marker1 = new google.maps.Marker({
-      position: {lat: 14.662802, lng: -86.215980},
+      position: {lat: 14.083834, lng: -87.207024},
       map: $scope.map,
       title: "Ubicación 1",
       labelContent: "ABCD"
@@ -2264,9 +2264,9 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     //Marcador 2 INICIO
     var contentString2 = 
             '<div id="content">'+
-              '<h2>San Pedro Sula</h2>'+
+              '<h2>Taller Col. Palmira</h2>'+
               '<div>'+
-              '<p><b>Corporación Flores</b>, Centro  ' +
+              '<p><b>Corporación Flores</b>, Tegucigalpa  ' +
               'Telefono: 2225-5540 '+
               '</div>'+
             '</div>';
