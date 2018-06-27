@@ -2236,9 +2236,10 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     //Marcador 1 INICIO
     var contentString1 = 
            '<div id="content">'+
-              '<h2>Taller Corporación Flores</h2>'+
+              '<h2>Taller de Servicios</h2>'+
               '<div>'+
-              '<p><b>Corporación Flores</b>,Col. El Prado, Tegucigalpa.' +
+              '<p><b>Tegucigalpa</b> ,Parque Automotriz Toyota, Col. El Prado.' +
+              '<p><b>Tel:</b> 9613-0997' +
               
               '</div>'+
             '</div>';
@@ -2264,10 +2265,10 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     //Marcador 2 INICIO
     var contentString2 = 
             '<div id="content">'+
-              '<h2>Taller Col. Palmira</h2>'+
+              '<h2>Taller de servicios Palmira</h2>'+
               '<div>'+
-              '<p><b>Corporación Flores</b>, Tegucigalpa  ' +
-              'Telefono: 2225-5540 '+
+              '<p><b>Tegucigalpa</b>, Col. Palmira ' +
+              '<p><b>Tel:</b> 2238-5783 '+
               '</div>'+
             '</div>';
 
@@ -2291,10 +2292,10 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     //Marcador 3 INICIO
     var contentString3 = 
             '<div id="content">'+
-              '<h2>5 ta. Avenida</h2>'+
+              '<h2>Taller de Servicio</h2>'+
               '<div>'+
-              '<p><b>Corporación Flores</b> ,Comayaguela ' +
-              
+              '<p><b>San Pedro Sula</b> , Parque Automotriz Toyota, Boulevard del Sur.' +
+              '<p><b>Tel:</b> 2561-860' +
               '</div>'+
             '</div>';
 
@@ -2304,7 +2305,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     });
 
     $scope.marker3 = new google.maps.Marker({
-      position: {lat: 14.095098, lng: -87.209198},
+      position: {lat: 15.476528, lng: -88.032570},
       map: $scope.map,
       title: "Ubicación 3"
     });
@@ -2319,10 +2320,10 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     //Marcador 4 INICIO
     var contentString4 = 
             '<div id="content">'+
-              '<h2>Danli</h2>'+
+              '<h2>Taller de Servicio </h2>'+
               '<div>'+
-              '<p><b>Corporación Flores</b> ' +
-              'Telefono: 2225-5540 '+
+              '<p><b>San Pedro Sula</b> ,3 ra. Ave, San Pedro Sula.' +
+              '<p><b>Tel:</b> 2557-7833 '+
               '</div>'+
             '</div>';
 
@@ -2332,7 +2333,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     });
 
     $scope.marker4 = new google.maps.Marker({
-      position: {lat: 14.030524, lng: -86.567733},
+      position: {lat: 15.5101584, lng: -88.0255630},
       map: $scope.map,
       title: "Ubicación 4"
     });
@@ -2345,13 +2346,14 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     
     //Marcador 5 INICIO
     var contentString5 = 
-            '<div id="content">'+
-              '<h2>San Pedro Sula</h2>'+
-              '<div>'+
-              '<p><b>Corporación Flores</b>,Blvd. Del sur  ' +
-             
-              '</div>'+
-            '</div>';
+    '<div id="content">'+
+    '<h2>Taller de Servicio </h2>'+
+    '<div>'+
+    '<p><b>La Ceiba</b> ,Parque Automotriz Toyota, entrada Col. Palmira.' +
+    '<p><b>Tel:</b> 2442-4711 '+
+    '</div>'+
+  '</div>';
+
 
     var infowindow5 = new google.maps.InfoWindow({
       content: contentString5,
@@ -2359,7 +2361,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     });
 
     $scope.marker5 = new google.maps.Marker({
-      position: {lat: 15.476639, lng: -88.032480},
+      position: {lat: 15.755202, lng: -86.833015},
       map: $scope.map,
       title: "Ubicación 5"
     });
@@ -2372,13 +2374,13 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     
     //Marcador 6 INICIO
     var contentString6 = 
-            '<div id="content">'+
-              '<h2>Toyota</h2>'+
-              '<div>'+
-              '<p><b>Corporación Flores</b> ,Col. El Prado, Tegucigalpa.  ' +
-             
-              '</div>'+
-            '</div>';
+    '<div id="content">'+
+    '<h2>Taller de Servicio </h2>'+
+    '<div>'+
+    '<p><b>Choluteca</b> ,Carretera Panamericana, salida a Guasaule, contiguo a Cruz Roja Hondureña.' +
+    '<p><b>Tel:</b> 2782-2524 '+
+    '</div>'+
+  '</div>';
 
     var infowindow6 = new google.maps.InfoWindow({
       content: contentString6,
@@ -2386,7 +2388,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     });
 
     $scope.marker6 = new google.maps.Marker({
-      position: {lat: 14.083941, lng: -87.206104},
+      position: {lat: 13.309767, lng: -87.178291},
       map: $scope.map,
       title: "Ubicación 2"
     });
@@ -2396,6 +2398,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
       });
     //Marcador 6 FIN
 
+    
     
     //Marcador 7 INICIO
     var contentString7 = 
