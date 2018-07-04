@@ -1896,10 +1896,10 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     //Marcador 1 INICIO
     var contentString1 = 
            '<div id="content">'+
-              '<h2>Juticalpa</h2>'+
+              '<h2>Productos Automotrices</h2>'+
               '<div>'+
-              '<p><b>Corporación Flores</b>, 5ta Avenida. ' +
-              
+              '<p><b>Juticalpa</b>, Blvd. Los Poetas, Barrios las Acacias, Centro Comercial Nazareth, al costado sur de terminal de buses Discovery, linea de lujo.' +
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2785-2963&quot;)"'+
               '</div>'+
             '</div>';
 
@@ -1924,10 +1924,10 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     //Marcador 2 INICIO
     var contentString2 = 
             '<div id="content">'+
-              '<h2>San Pedro Sula</h2>'+
+              '<h2>Productos Automotrices</h2>'+
               '<div>'+
-              '<p><b>Corporación Flores</b>, Centro  ' +
-              'Telefono: 2225-5540 '+
+              '<p><b>Agencia Centro SPS.</b>, Barrio Guamilito, 3 ave, 6 calle frente a Diario La Prensa, San Pedro Sula.  ' +
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2553-1070&quot;)"'+
               '</div>'+
             '</div>';
 
@@ -1937,7 +1937,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     });
 
     $scope.marker2 = new google.maps.Marker({
-      position: {lat: 15.476734, lng: -88.032951},
+      position: {lat: 15.476639, lng: -88.032480},
       map: $scope.map,
       title: "Ubicación 2"
     });
@@ -1978,13 +1978,13 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     
     //Marcador 4 INICIO
     var contentString4 = 
-            '<div id="content">'+
-              '<h2>Danli</h2>'+
-              '<div>'+
-              '<p><b>Corporación Flores</b> ' +
-              'Telefono: 2225-5540 '+
-              '</div>'+
-            '</div>';
+    '<div id="content">'+
+    '<h2>Productos Automotrices</h2>'+
+    '<div>'+
+    '<p><b>Danli.</b>,  Barrio el Centro, calle del comercio frente a Tigo Center' +
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2763-3305&quot;)"'+
+    '</div>'+
+  '</div>';
 
     var infowindow4 = new google.maps.InfoWindow({
       content: contentString4,
@@ -2005,13 +2005,13 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     
     //Marcador 5 INICIO
     var contentString5 = 
-            '<div id="content">'+
-              '<h2>San Pedro Sula</h2>'+
-              '<div>'+
-              '<p><b>Corporación Flores</b>,Blvd. Del sur  ' +
-             
-              '</div>'+
-            '</div>';
+    '<div id="content">'+
+    '<h2>Productos Automotrices</h2>'+
+    '<div>'+
+    '<p><b>Agencia Centro SPS.</b>, Barrio Guamilito, 3 ave, 6 calle frente a Diario La Prensa, San Pedro Sula.  ' +
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2553-1070&quot;)"'+
+    '</div>'+
+  '</div>';
 
     var infowindow5 = new google.maps.InfoWindow({
       content: contentString5,
@@ -2032,13 +2032,13 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     
     //Marcador 6 INICIO
     var contentString6 = 
-            '<div id="content">'+
-              '<h2>Toyota</h2>'+
-              '<div>'+
-              '<p><b>Corporación Flores</b> ,Col. El Prado, Tegucigalpa.  ' +
-             
-              '</div>'+
-            '</div>';
+    '<div id="content">'+
+    '<h2>Productos Automotrices</h2>'+
+    '<div>'+
+    '<p><b>Tegucigalpa</b>, El Prado, Parque Automotriz Toyota vía puente San José. ' +
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2216-4000&quot;)"'+
+    '</div>'+
+  '</div>';
 
     var infowindow6 = new google.maps.InfoWindow({
       content: contentString6,
@@ -2059,13 +2059,13 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     
     //Marcador 7 INICIO
     var contentString7 = 
-            '<div id="content">'+
-              '<h2>Comayagua</h2>'+
-              '<div>'+
-              '<p><b>Corporación Flores</b>, Col. El Prado, Tegucigalpa.  ' +
-             
-              '</div>'+
-            '</div>';
+    '<div id="content">'+
+    '<h2>Productos Automotrices</h2>'+
+    '<div>'+
+    '<p><b>Comayagua</b>, Final del Blvd, Cuarto Centenario, salida a la Libertad, antes de la Cámara de Comercio e Industria de Comayagua.' +
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2772-0695&quot;)"'+
+    '</div>'+
+  '</div>';
 
     var infowindow7 = new google.maps.InfoWindow({
       content: contentString7,
@@ -2113,13 +2113,13 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     
     //Marcador 9 INICIO
     var contentString9 = 
-            '<div id="content">'+
-              '<h2>La Ceiba</h2>'+
-              '<div>'+
-              '<p><b>Corporación Flores</b>, Col. Palmira, Ceiba.  ' +
-              'Telefono: 2225-5540 '+
-              '</div>'+
-            '</div>';
+    '<div id="content">'+
+    '<h2>Productos Automotrices</h2>'+
+    '<div>'+
+    '<p><b>La Ceiba</b>, Colonia Palmira, carretera La Ceiba.' +
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2442-4140&quot;)"'+
+    '</div>'+
+  '</div>';
 
     var infowindow9 = new google.maps.InfoWindow({
       content: contentString9,
@@ -2140,13 +2140,13 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     
     //Marcador 10 INICIO
     var contentString10 = 
-            '<div id="content">'+
-              '<h2>Choluteca</h2>'+
-              '<div>'+
-              '<p><b>Corporación Flores</b>, Carretera Guasable.  ' +
-              
-              '</div>'+
-            '</div>';
+    '<div id="content">'+
+    '<h2>Productos Automotrices</h2>'+
+    '<div>'+
+    '<p><b>Choluteca</b>, Carretera Panamericana, salida a Guasaule contiguo a Cruz Roja Hondureña, Parque Automotriz Toyota.' +
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2785-2524&quot;)"'+
+    '</div>'+
+  '</div>';
 
     var infowindow10 = new google.maps.InfoWindow({
       content: contentString10,
@@ -2167,13 +2167,13 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     
     //Marcador 11 INICIO
     var contentString11 = 
-            '<div id="content">'+
-              '<h2>Santa Rosa de Copan</h2>'+
-              '<div>'+
-              '<p><b>Corporación Flores</b>, Santa Rosa de Copan  ' +
-              
-              '</div>'+
-            '</div>';
+    '<div id="content">'+
+    '<h2>Productos Automotrices</h2>'+
+    '<div>'+
+    '<p><b>Santa Rosa de Copán</b>,  Barrio el Progreso frente a la Cámara de Comercio e Industria de Copán.' +
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2662-2657&quot;)"'+
+    '</div>'+
+  '</div>';
 
     var infowindow11 = new google.maps.InfoWindow({
       content: contentString11,
@@ -2239,7 +2239,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
               '<h2>Taller de Servicios</h2>'+
               '<div>'+
               '<p><b>Tegucigalpa</b> ,Parque Automotriz Toyota, Col. El Prado.' +
-              '<p><b>Tel:</b> 9613-0997' +
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;9613-0997&quot;)"'+
               
               '</div>'+
             '</div>';
@@ -2250,7 +2250,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     });
 
     $scope.marker1 = new google.maps.Marker({
-      position: {lat: 14.083834, lng: -87.207024},
+      position: {lat: 14.083870, lng: -87.207024},
       map: $scope.map,
       title: "Ubicación 1",
       labelContent: "ABCD"
@@ -2268,7 +2268,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
               '<h2>Taller de servicios Palmira</h2>'+
               '<div>'+
               '<p><b>Tegucigalpa</b>, Col. Palmira ' +
-              '<p><b>Tel:</b> 2238-5783 '+
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2238-5783&quot;)"'+
               '</div>'+
             '</div>';
 
@@ -2278,7 +2278,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     });
 
     $scope.marker2 = new google.maps.Marker({
-      position: {lat: 15.476734, lng: -88.032951},
+      position: {lat: 14.103621, lng: -87.195305},
       map: $scope.map,
       title: "Ubicación 2"
     });
@@ -2295,7 +2295,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
               '<h2>Taller de Servicio</h2>'+
               '<div>'+
               '<p><b>San Pedro Sula</b> , Parque Automotriz Toyota, Boulevard del Sur.' +
-              '<p><b>Tel:</b> 2561-860' +
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2556-7356&quot;)"'+
               '</div>'+
             '</div>';
 
@@ -2320,10 +2320,10 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     //Marcador 4 INICIO
     var contentString4 = 
             '<div id="content">'+
-              '<h2>Taller de Servicio </h2>'+
+              '<h2>Taller de Servicio Express Centro</h2>'+
               '<div>'+
               '<p><b>San Pedro Sula</b> ,3 ra. Ave, San Pedro Sula.' +
-              '<p><b>Tel:</b> 2557-7833 '+
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2557-7833&quot;)"'+
               '</div>'+
             '</div>';
 
@@ -2350,7 +2350,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     '<h2>Taller de Servicio </h2>'+
     '<div>'+
     '<p><b>La Ceiba</b> ,Parque Automotriz Toyota, entrada Col. Palmira.' +
-    '<p><b>Tel:</b> 2442-4711 '+
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2442-4711&quot;)"'+
     '</div>'+
   '</div>';
 
@@ -2378,7 +2378,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     '<h2>Taller de Servicio </h2>'+
     '<div>'+
     '<p><b>Choluteca</b> ,Carretera Panamericana, salida a Guasaule, contiguo a Cruz Roja Hondureña.' +
-    '<p><b>Tel:</b> 2782-2524 '+
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2782-2524&quot;)"'+
     '</div>'+
   '</div>';
 
@@ -2390,7 +2390,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     $scope.marker6 = new google.maps.Marker({
       position: {lat: 13.309767, lng: -87.178291},
       map: $scope.map,
-      title: "Ubicación 2"
+      title: "Ubicación 6"
     });
 
     $scope.marker6.addListener('click', function() {
@@ -2402,13 +2402,13 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     
     //Marcador 7 INICIO
     var contentString7 = 
-            '<div id="content">'+
-              '<h2>Comayagua</h2>'+
-              '<div>'+
-              '<p><b>Corporación Flores</b>, Col. El Prado, Tegucigalpa.  ' +
-             
-              '</div>'+
-            '</div>';
+    '<div id="content">'+
+    '<h2>Taller Móvil </h2>'+
+    '<div>'+
+    '<p><b>San Pedro Sula</b> ,Agencia Boulevard del Sur intercepción 33 Calle y Boulevard del Sur frente a puente a desnivel.' +
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;9689-4454&quot;)"'+
+    '</div>'+
+  '</div>';
 
     var infowindow7 = new google.maps.InfoWindow({
       content: contentString7,
@@ -2416,7 +2416,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     });
 
     $scope.marker7 = new google.maps.Marker({
-      position: {lat: 14.466235,  lng: -87.646263},
+      position: {lat: 15.467879, lng: -87.985446},
       map: $scope.map,
       title: "Ubicación 2"
     });
@@ -2427,40 +2427,14 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     //Marcador 7 FIN
 
     
-    //Marcador 8 INICIO
-    var contentString8 = 
-            '<div id="content">'+
-              '<h2>Súper Car</h2>'+
-              '<div>'+
-              '<p><b>Corporación Flores</b>, Tegucigalpa.  ' +
-           
-              '</div>'+
-            '</div>';
-
-    var infowindow8 = new google.maps.InfoWindow({
-      content: contentString8,
-      maxWidth: 300
-    });
-
-    $scope.marker8 = new google.maps.Marker({
-      position: {lat: 14.095599, lng: -87.210143},
-      map: $scope.map,
-      title: "Ubicación 2"
-    });
-
-    $scope.marker8.addListener('click', function() {
-        infowindow8.open($scope.map, $scope.marker8);
-      });
-    //Marcador 8 FIN
-
-    
+        
     //Marcador 9 INICIO
     var contentString9 = 
             '<div id="content">'+
               '<h2>La Ceiba</h2>'+
               '<div>'+
               '<p><b>Corporación Flores</b>, Col. Palmira, Ceiba.  ' +
-              'Telefono: 2225-5540 '+
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2225-5540&quot;)"'+
               '</div>'+
             '</div>';
 
@@ -2484,10 +2458,10 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     //Marcador 10 INICIO
     var contentString10 = 
             '<div id="content">'+
-              '<h2>Choluteca</h2>'+
+              '<h2>Taller de Servicios</h2>'+
               '<div>'+
-              '<p><b>Corporación Flores</b>, Carretera Guasable.  ' +
-              
+              '<p><b>Choluteca</b>, Parque Automotriz Toyota, Carretera Panamericana, salida a Guasaule, contiguo a Cruz Roja Hondureña.' +
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2782-2524&quot;)"'+
               '</div>'+
             '</div>';
 
@@ -2511,10 +2485,10 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     //Marcador 11 INICIO
     var contentString11 = 
             '<div id="content">'+
-              '<h2>Santa Rosa de Copan</h2>'+
+              '<h2>Taller Móvil</h2>'+
               '<div>'+
-              '<p><b>Corporación Flores</b>, Santa Rosa de Copan  ' +
-              
+              '<p><b>Tegucigalpa</b>, Parque Automotriz Toyota, Colonia El Prado.' +
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;9613-0997&quot;)"'+
               '</div>'+
             '</div>';
 
@@ -2524,7 +2498,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     });
 
     $scope.marker11 = new google.maps.Marker({
-      position: {lat: 14.767101, lng: -88.776263},
+      position: {lat: 14.083834,  lng: -87.207024},
       map: $scope.map,
       title: "Ubicación 11"
     });
