@@ -1899,7 +1899,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
               '<h2>Productos Automotrices</h2>'+
               '<div>'+
               '<p><b>Juticalpa</b>, Blvd. Los Poetas, Barrios las Acacias, Centro Comercial Nazareth, al costado sur de terminal de buses Discovery, linea de lujo.' +
-              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2785-2963&quot;)"'+
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2785-2963&quot;"'+
               '</div>'+
             '</div>';
 
@@ -1927,7 +1927,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
               '<h2>Productos Automotrices</h2>'+
               '<div>'+
               '<p><b>Agencia Centro SPS.</b>, Barrio Guamilito, 3 ave, 6 calle frente a Diario La Prensa, San Pedro Sula.  ' +
-              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2553-1070&quot;)"'+
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2353-1070&quot;"'+
               '</div>'+
             '</div>';
 
@@ -1982,7 +1982,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     '<h2>Productos Automotrices</h2>'+
     '<div>'+
     '<p><b>Danli.</b>,  Barrio el Centro, calle del comercio frente a Tigo Center' +
-    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2763-3305&quot;)"'+
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2763-3305&quot;"'+
     '</div>'+
   '</div>';
 
@@ -2009,7 +2009,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     '<h2>Productos Automotrices</h2>'+
     '<div>'+
     '<p><b>Agencia Centro SPS.</b>, Barrio Guamilito, 3 ave, 6 calle frente a Diario La Prensa, San Pedro Sula.  ' +
-    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2553-1070&quot;)"'+
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2553-1070&quot;"'+ 
     '</div>'+
   '</div>';
 
@@ -2036,7 +2036,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     '<h2>Productos Automotrices</h2>'+
     '<div>'+
     '<p><b>Tegucigalpa</b>, El Prado, Parque Automotriz Toyota vía puente San José. ' +
-    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2216-4000&quot;)"'+
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2216-4000&quot;"'+
     '</div>'+
   '</div>';
 
@@ -2063,7 +2063,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     '<h2>Productos Automotrices</h2>'+
     '<div>'+
     '<p><b>Comayagua</b>, Final del Blvd, Cuarto Centenario, salida a la Libertad, antes de la Cámara de Comercio e Industria de Comayagua.' +
-    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2772-0695&quot;)"'+
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2772-0695&quot;"'+ 
     '</div>'+
   '</div>';
 
@@ -2117,7 +2117,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     '<h2>Productos Automotrices</h2>'+
     '<div>'+
     '<p><b>La Ceiba</b>, Colonia Palmira, carretera La Ceiba.' +
-    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2442-4140&quot;)"'+
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2442-4140&quot;"'+ 
     '</div>'+
   '</div>';
 
@@ -2144,7 +2144,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     '<h2>Productos Automotrices</h2>'+
     '<div>'+
     '<p><b>Choluteca</b>, Carretera Panamericana, salida a Guasaule contiguo a Cruz Roja Hondureña, Parque Automotriz Toyota.' +
-    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2785-2524&quot;)"'+
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2785-2524&quot;"'+ 
     '</div>'+
   '</div>';
 
@@ -2171,7 +2171,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     '<h2>Productos Automotrices</h2>'+
     '<div>'+
     '<p><b>Santa Rosa de Copán</b>,  Barrio el Progreso frente a la Cámara de Comercio e Industria de Copán.' +
-    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2662-2657&quot;)"'+
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2662-2657&quot;"'+ 
     '</div>'+
   '</div>';
 
@@ -2239,7 +2239,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
               '<h2>Taller de Servicios</h2>'+
               '<div>'+
               '<p><b>Tegucigalpa</b> ,Parque Automotriz Toyota, Col. El Prado.' +
-              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;9613-0997&quot;)"'+
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:9613-0997&quot;"'+
               
               '</div>'+
             '</div>';
@@ -2295,7 +2295,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
               '<h2>Taller de Servicio</h2>'+
               '<div>'+
               '<p><b>San Pedro Sula</b> , Parque Automotriz Toyota, Boulevard del Sur.' +
-              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2556-7356&quot;)"'+
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2561-8600&quot;"'+
               '</div>'+
             '</div>';
 
@@ -2323,7 +2323,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
               '<h2>Taller de Servicio Express Centro</h2>'+
               '<div>'+
               '<p><b>San Pedro Sula</b> ,3 ra. Ave, San Pedro Sula.' +
-              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2557-7833&quot;)"'+
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2557-7833&quot;"'+
               '</div>'+
             '</div>';
 
@@ -2350,7 +2350,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     '<h2>Taller de Servicio </h2>'+
     '<div>'+
     '<p><b>La Ceiba</b> ,Parque Automotriz Toyota, entrada Col. Palmira.' +
-    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2442-4711&quot;)"'+
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2442-4711&quot;"'+
     '</div>'+
   '</div>';
 
@@ -2378,7 +2378,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     '<h2>Taller de Servicio </h2>'+
     '<div>'+
     '<p><b>Choluteca</b> ,Carretera Panamericana, salida a Guasaule, contiguo a Cruz Roja Hondureña.' +
-    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2782-2524&quot;)"'+
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2782-2524&quot;"'+
     '</div>'+
   '</div>';
 
@@ -2406,7 +2406,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
     '<h2>Taller Móvil </h2>'+
     '<div>'+
     '<p><b>San Pedro Sula</b> ,Agencia Boulevard del Sur intercepción 33 Calle y Boulevard del Sur frente a puente a desnivel.' +
-    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;9689-4454&quot;)"'+
+    '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:9689-4454&quot;"'+ 
     '</div>'+
   '</div>';
 
@@ -2434,7 +2434,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
               '<h2>La Ceiba</h2>'+
               '<div>'+
               '<p><b>Corporación Flores</b>, Col. Palmira, Ceiba.  ' +
-              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2225-5540&quot;)"'+
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2225-5540&quot;"'+
               '</div>'+
             '</div>';
 
@@ -2461,7 +2461,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
               '<h2>Taller de Servicios</h2>'+
               '<div>'+
               '<p><b>Choluteca</b>, Parque Automotriz Toyota, Carretera Panamericana, salida a Guasaule, contiguo a Cruz Roja Hondureña.' +
-              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2782-2524&quot;)"'+
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2782-2524&quot;"'+ 
               '</div>'+
             '</div>';
 
@@ -2488,7 +2488,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
               '<h2>Taller Móvil</h2>'+
               '<div>'+
               '<p><b>Tegucigalpa</b>, Parque Automotriz Toyota, Colonia El Prado.' +
-              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;9613-0997&quot;)"'+
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:9613-0997&quot;"'+ 
               '</div>'+
             '</div>';
 
