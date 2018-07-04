@@ -2268,7 +2268,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
               '<h2>Taller de servicios Palmira</h2>'+
               '<div>'+
               '<p><b>Tegucigalpa</b>, Col. Palmira ' +
-              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="alert(&quot;2238-5783&quot;)"'+
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:96130997&quot;"'+
               '</div>'+
             '</div>';
 
