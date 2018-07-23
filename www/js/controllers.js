@@ -461,7 +461,7 @@ angular.module('starter.controllers', [])
       $scope.sucursal = this.sucursal;
   };
 
-  $scope.modelos = [{nombre:"Agya"}, {nombre:"Etios"}, {nombre:"Yaris"}, {nombre:"Corolla"}, {nombre:"Rush"}, {nombre:"Agya"}, {nombre:"Avanza"}, {nombre:"Rav4"}, {nombre:"Fortuner"}, {nombre:"Land Cruiser Prado"}, {nombre:"Land Cruiser Station Wagon"}, {nombre:"Hilux Cabina Sencilla 4x2"}, {nombre:"Hilux Doble Cabina 4x2"}, {nombre:"Hilux Doble Cabina 4x2 Prerruner"}, {nombre:"Hilux Cabina Sencilla 4x4"}, {nombre:"Hilux Extra Cabina 4x4"}, {nombre:"Hilux Doble Cabina 4x4"}, {nombre:"Land Cruise Pick Up"}, {nombre:"GT 86"}, {nombre:"Hiace Panel"}, {nombre:"Hiace Pasajeros Techo Bajo"}, {nombre:"Hiace Pasajeros Techo Alto"}, {nombre:"Coaster"}];  
+  $scope.modelos = [{nombre:"Agya"}, {nombre:"Etios"}, {nombre:"Yaris"}, {nombre:"Corolla"}, {nombre:"Rush"}, {nombre:"Avanza"}, {nombre:"Rav4"}, {nombre:"Fortuner"}, {nombre:"Land Cruiser Prado"}, {nombre:"Land Cruiser Station Wagon"}, {nombre:"Hilux Cabina Sencilla 4x2"}, {nombre:"Hilux Doble Cabina 4x2"}, {nombre:"Hilux Doble Cabina 4x2 Prerruner"}, {nombre:"Hilux Cabina Sencilla 4x4"}, {nombre:"Hilux Extra Cabina 4x4"}, {nombre:"Hilux Doble Cabina 4x4"}, {nombre:"Land Cruise Pick Up"}, {nombre:"GT 86"}, {nombre:"Hiace Panel"}, {nombre:"Hiace Pasajeros Techo Bajo"}, {nombre:"Hiace Pasajeros Techo Alto"}, {nombre:"Coaster"}];  
   $scope.modelo = $scope.modelos[0].nombre;
   $scope.updateModelo = function() {
       $scope.modelo = this.modelo;
@@ -1156,7 +1156,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
       $scope.taller = this.taller;
   };
 
-  $scope.modelos = [{nombre:"Agya"}, {nombre:"Etios"}, {nombre:"Yaris"}, {nombre:"Corolla"}, {nombre:"Rush"}, {nombre:"Agya"}, {nombre:"Avanza"}, {nombre:"Rav4"}, {nombre:"Fortuner"}, {nombre:"Land Cruiser Prado"}, {nombre:"Land Cruiser Station Wagon"}, {nombre:"Hilux Cabina Sencilla 4x2"}, {nombre:"Hilux Doble Cabina 4x2"}, {nombre:"Hilux Doble Cabina 4x2 Prerruner"}, {nombre:"Hilux Cabina Sencilla 4x4"}, {nombre:"Hilux Extra Cabina 4x4"}, {nombre:"Hilux Doble Cabina 4x4"}, {nombre:"Land Cruise Pick Up"}, {nombre:"GT 86"}, {nombre:"Hiace Panel"}, {nombre:"Hiace Pasajeros Techo Bajo"}, {nombre:"Hiace Pasajeros Techo Alto"}, {nombre:"Coaster"}];  
+  $scope.modelos = [{nombre:"Agya"}, {nombre:"Etios"}, {nombre:"Yaris"}, {nombre:"Corolla"}, {nombre:"Rush"}, {nombre:"Avanza"}, {nombre:"Rav4"}, {nombre:"Fortuner"}, {nombre:"Land Cruiser Prado"}, {nombre:"Land Cruiser Station Wagon"}, {nombre:"Hilux Cabina Sencilla 4x2"}, {nombre:"Hilux Doble Cabina 4x2"}, {nombre:"Hilux Doble Cabina 4x2 Prerruner"}, {nombre:"Hilux Cabina Sencilla 4x4"}, {nombre:"Hilux Extra Cabina 4x4"}, {nombre:"Hilux Doble Cabina 4x4"}, {nombre:"Land Cruise Pick Up"}, {nombre:"GT 86"}, {nombre:"Hiace Panel"}, {nombre:"Hiace Pasajeros Techo Bajo"}, {nombre:"Hiace Pasajeros Techo Alto"}, {nombre:"Coaster"}];  
   $scope.modelo = $scope.modelos[0].nombre;
   $scope.updateModelo = function() {
       $scope.modelo = this.modelo;
