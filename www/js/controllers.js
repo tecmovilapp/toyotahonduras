@@ -2239,7 +2239,7 @@ if($scope.idCategoria == 4 && $scope.idMarca == 0 ){
               '<h2>Taller de Servicios</h2>'+
               '<div>'+
               '<p><b>Tegucigalpa</b> ,Parque Automotriz Toyota, Col. El Prado.' +
-              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:9613-0997&quot;"'+
+              '<input type="button" class="button button-block button-small button-assertive-custom" value="Llamar" onclick="document.location.href =  &quot;tel:2216-4000&quot;"'+
               
               '</div>'+
             '</div>';
